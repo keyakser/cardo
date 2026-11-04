@@ -1170,3 +1170,12 @@ html:is([lang="ar"], [lang="fa"]) .hero .display.hero-title { line-height: 1.25;
 .footer-bottom a:hover { color: var(--ink); }
 .consent { margin: 0; }
 .consent a { color: var(--ink); text-decoration: underline; }
+
+/* SAM 3.1 cut-outs + Muse Image drawings */
+.sample-btn { margin-top: 10px; }
+.sam-hint { margin: 8px 2px 0; }
+.draw-btn { display: inline-flex; align-items: center; gap: 6px; margin: 4px auto 0; padding: 7px 14px; border-radius: 999px; border: 1px dashed var(--line); background: var(--surface); color: var(--muted); font: 600 0.82rem/1 var(--font-mono, inherit); cursor: pointer; transition: color .15s, border-color .15s; }
+.draw-btn:hover:not(:disabled) { color: var(--ink); border-color: var(--ink); border-style: solid; }
+.draw-btn:disabled { cursor: progress; }
+.list li .draw-btn { margin: 8px 0 0; }
+.card-art[src^="data:image"], .list-art[src^="data:image"] { border-radius: 0; object-fit: contain; }

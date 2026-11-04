@@ -4,11 +4,16 @@ import { useEffect, useState } from "react";
 import FavButton from "@/components/FavButton";
 import ReportButton from "@/components/ReportButton";
 import KurdolingoPromo from "@/components/KurdolingoPromo";
+import IllustrateButton from "@/components/IllustrateButton";
+import { useToast } from "@/lib/toast";
 import { useI18n } from "@/lib/i18n";
 import type { Card } from "@/lib/types";
 
-export function Study({ cards, lang }: { cards: Card[]; lang: string }) {
+type ArtFn = (i: number, img: string) => void;
+
+export function Study({ cards, lang, onArt }: { cards: Card[]; lang: string; onArt?: ArtFn }) {
   const { t } = useI18n();
+  const toast = useToast();
   const [queue, setQueue] = useState<number[]>(() => cards.map((_, i) => i));
   const [flipped, setFlipped] = useState(false);
   const [known, setKnown] = useState(0);
@@ -75,6 +80,7 @@ export function Study({ cards, lang }: { cards: Card[]; lang: string }) {
             {card.img && <img className="card-art" src={card.img} alt="" />}
             <span className="pos">{card.pos}</span>
             <span className="word">{card.ku}</span>
+            {!card.img && onArt && <IllustrateButton key={queue[0]} card={card} onDone={(img) => onArt(queue[0], img)} onError={toast} />}
             <span className="hint">{t("study.flip")}</span>
           </div>
           <div className="face back">
@@ -108,7 +114,8 @@ export function Study({ cards, lang }: { cards: Card[]; lang: string }) {
   );
 }
 
-export function List({ cards, lang }: { cards: Card[]; lang: string }) {
+export function List({ cards, lang, onArt }: { cards: Card[]; lang: string; onArt?: ArtFn }) {
+  const toast = useToast();
   return (
     <ul className="list">
       {cards.map((c, i) => (
@@ -122,6 +129,7 @@ export function List({ cards, lang }: { cards: Card[]; lang: string }) {
             <FavButton card={c} lang={lang} />
             <ReportButton card={c} lang={lang} />
           </div>
+          {!c.img && onArt && <IllustrateButton card={c} onDone={(img) => onArt(i, img)} onError={toast} />}
           {c.example_ku && (
             <p className="ex">
               <i>{c.example_ku}</i> — {c.example_tr}

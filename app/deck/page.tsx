@@ -10,10 +10,13 @@ import { useToast } from "@/lib/toast";
 import { useI18n, type TKey } from "@/lib/i18n";
 import { decodeDeck } from "@/lib/share";
 import type { Deck } from "@/lib/types";
+import { deckKey, loadArt, saveArt } from "@/lib/art";
+import { illustrate, useIllustrateError } from "@/components/IllustrateButton";
 
 export default function DeckPage() {
   const { t } = useI18n();
   const [deck, setDeck] = useState<Deck | null>(null);
+  const [key, setKey] = useState("");
   const [state, setState] = useState<"loading" | "ok" | "missing">("loading");
 
   useEffect(() => {
@@ -21,6 +24,11 @@ export default function DeckPage() {
       const m = location.hash.match(/d=([\w-]+)/);
       if (!m) return setState("missing");
       decodeDeck(m[1]).then((d) => {
+        const k = deckKey(m[1]);
+        // Pictures made in this browser (SAM cut-outs, Muse Image drawings).
+        const art = loadArt(k);
+        if (d) d = { ...d, cards: d.cards.map((c, i) => (c.img || !art[i] ? c : { ...c, img: art[i] })) };
+        setKey(k);
         setDeck(d);
         setState(d ? "ok" : "missing");
       });
@@ -41,12 +49,48 @@ export default function DeckPage() {
       </main>
     );
 
-  return <DeckView deck={deck} />;
+  return <DeckView key={key} deck={deck} artKey={key} />;
 }
 
-function DeckView({ deck }: { deck: Deck }) {
+function DeckView({ deck: initial, artKey }: { deck: Deck; artKey: string }) {
   const { t } = useI18n();
   const toast = useToast();
+  const errMsg = useIllustrateError();
+  const [deck, setDeck] = useState(initial);
+  const [drawing, setDrawing] = useState(0);
+  // AI decks (not ready-made sets) can get Muse Image pictures on demand.
+  const canDraw = !initial.cards.some((c) => c.img?.startsWith("/sets/"));
+  const missing = deck.cards.filter((c) => !c.img).length;
+
+  function setArt(i: number, img: string) {
+    setDeck((d) => {
+      const cards = d.cards.map((c, j) => (j === i ? { ...c, img } : c));
+      const art: Record<number, string> = {};
+      cards.forEach((c, j) => c.img?.startsWith("data:") && (art[j] = c.img));
+      saveArt(artKey, art);
+      return { ...d, cards };
+    });
+  }
+
+  async function drawAll() {
+    const todo = deck.cards.map((c, i) => (c.img ? -1 : i)).filter((i) => i >= 0);
+    setDrawing(todo.length);
+    let failed = "";
+    // Two at a time keeps us well inside the image rate limit.
+    const run = async () => {
+      for (let i = todo.shift(); i !== undefined; i = todo.shift()) {
+        try {
+          setArt(i, await illustrate(deck.cards[i]));
+        } catch (e) {
+          failed = errMsg(e);
+        }
+        setDrawing((n) => n - 1);
+      }
+    };
+    await Promise.all([run(), run()]);
+    setDrawing(0);
+    if (failed) toast(failed);
+  }
   const [tab, setTab] = useState<"study" | "list" | "quiz">("study");
   const [copied, setCopied] = useState(false);
 
@@ -88,6 +132,11 @@ function DeckView({ deck }: { deck: Deck }) {
             {copied ? t("deck.copied") : t("deck.share")}
           </button>
           <DownloadMenu cards={deck.cards} title={deck.title} label={t("profile.download")} />
+          {canDraw && missing > 0 && (
+            <button className="btn ghost" onClick={drawAll} disabled={drawing > 0}>
+              {drawing > 0 ? <span className="spinner">{t("art.drawingN" as TKey, { n: drawing })}</span> : t("art.drawAll" as TKey)}
+            </button>
+          )}
           <Link href="/#create" className="btn ghost">
             {t("deck.new")}
           </Link>
@@ -106,7 +155,7 @@ function DeckView({ deck }: { deck: Deck }) {
         </button>
       </div>
 
-      {tab === "study" ? <Study cards={deck.cards} lang={deck.lang} /> : tab === "quiz" ? <Quiz cards={deck.cards} /> : <List cards={deck.cards} lang={deck.lang} />}
+      {tab === "study" ? <Study cards={deck.cards} lang={deck.lang} onArt={canDraw ? setArt : undefined} /> : tab === "quiz" ? <Quiz cards={deck.cards} /> : <List cards={deck.cards} lang={deck.lang} onArt={canDraw ? setArt : undefined} />}
 
       <div className="deck-promo">
         <KurdolingoPromo variant="deck" place="deck" />

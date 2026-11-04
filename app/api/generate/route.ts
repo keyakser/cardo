@@ -3,6 +3,7 @@ import { createClient } from "@supabase/supabase-js";
 import { LANGS, LEVELS, type Deck } from "@/lib/types";
 import { deckFromSet, matchSet } from "@/lib/sets";
 import { SET_DATA } from "@/lib/sets-data";
+import { segment, type Cut } from "@/lib/sam";
 
 export const runtime = "nodejs";
 export const maxDuration = 180;
@@ -117,7 +118,7 @@ export async function POST(req: Request) {
       type: "image",
       source: { type: "base64", media_type: m[1] as "image/jpeg", data: m[2] },
     });
-    task = `Look at this photo. Identify up to ${count} clearly visible objects, colors, actions or features in it, and make one flashcard for each with its Kurmanji word. Example sentences should describe what is in the photo.${input ? ` Extra context from the learner: "${input}".` : ""}`;
+    task = `Look at this photo. Identify up to ${count} clearly visible objects, colors, actions or features in it, and make one flashcard for each with its Kurmanji word. Example sentences should describe what is in the photo. Add one more field to every card: "seg", a short English noun phrase (1-3 words, e.g. "red apple", "coffee cup") naming the single physical object in the photo that the card is about, so an image segmentation model can cut it out. Use "" when the card is not one visible object (a color, an action, the whole scene).${input ? ` Extra context from the learner: "${input}".` : ""}`;
   } else if (mode === "text") {
     if (input.length < 10) return Response.json({ error: "Paste a longer text.", code: "text" }, { status: 400 });
     task = `Here is a text. Pick the ${count} most useful words or phrases for a ${level} learner and make flashcards. If the text is in Kurmanji, take words from it; if it is in another language, give the Kurmanji equivalents of its key words.\n\n"""${input}"""`;
@@ -128,7 +129,9 @@ export async function POST(req: Request) {
 
   content.push({
     type: "text",
-    text: `${task}\n\nLearner's language: ${langName}. Level: ${level}. Return exactly ${mode === "photo" ? `up to ${count}` : count} cards as JSON.`,
+    text: `${task}\n\nLearner's language: ${langName}. Level: ${level}. Return exactly ${mode === "photo" ? `up to ${count}` : count} cards as JSON.${
+      mode === "photo" ? ` For this photo, every card object must also have the "seg" field: {"ku", "pos", "meaning", "example_ku", "example_tr", "note", "seg"}.` : ""
+    }`,
   });
 
   // Muse always thinks before answering, and the thinking counts against
@@ -169,9 +172,27 @@ export async function POST(req: Request) {
         example_ku: String(c.example_ku || ""),
         example_tr: String(c.example_tr || ""),
         note: String(c.note || ""),
+        seg: typeof c.seg === "string" ? c.seg.trim().slice(0, 40) : "",
       }));
     if (!cards.length) throw new Error("model returned no cards");
-    const deck: Deck = { title: String(parsed.title || input || "Cardo"), lang: langCode, level, cards };
+    // Photo decks: SAM 3.1 cuts each named object out of the learner's own
+    // photo (all cards in parallel). The browser turns the masks into stickers.
+    let cuts: Cut[] = [];
+    if (mode === "photo") {
+      const samStart = Date.now();
+      // If the model skipped "seg" and explains in English, its meaning names the object.
+      const phrase = (c: { seg: string; meaning: string; pos: string }) =>
+        c.seg || (langCode === "en" && /noun/i.test(c.pos) ? c.meaning.split(/[,;(]/)[0].trim().slice(0, 40) : "");
+      const found = await Promise.all(cards.map((c: { seg: string; meaning: string; pos: string }, i: number) => (phrase(c) ? segment(image, phrase(c), i) : null)));
+      cuts = found.filter((c): c is Cut => !!c);
+      console.log(`sam: ${cuts.length}/${cards.length} cut (${cards.filter((c: { seg: string }) => c.seg).length} named) in ${Date.now() - samStart} ms`);
+    }
+    const deck: Deck = {
+      title: String(parsed.title || input || "Cardo"),
+      lang: langCode,
+      level,
+      cards: cards.map(({ seg: _seg, ...c }: { seg: string }) => c) as Deck["cards"],
+    };
     await logGeneration(token, {
       ...logBase,
       card_count: cards.length,
@@ -180,7 +201,7 @@ export async function POST(req: Request) {
       title: deck.title.slice(0, 200),
       deck,
     });
-    return Response.json(deck);
+    return Response.json({ ...deck, cuts });
   } catch (err) {
     console.error("generate failed:", err);
     await logGeneration(token, { ...logBase, duration_ms: Date.now() - started, success: false });

@@ -154,6 +154,13 @@ const enExtra = {
   "print.ciya.tag": "Nature",
   "print.ciya.mean": "mountain",
   "print.ciya.ex": "The mountains are high and white.",
+  "art.draw": "Draw it",
+  "art.drawing": "Drawing…",
+  "art.drawingN": "Drawing {n}…",
+  "art.drawAll": "Draw all pictures",
+  "art.fail": "The picture couldn't be drawn. Try again.",
+  "photo.samHint": "Each object is cut out of your photo by SAM 3.1.",
+  "photo.sample": "Try a sample photo",
 };
 
 export type ExtraKey = keyof typeof enExtra;
@@ -312,6 +319,13 @@ const tr: Extra = {
   "print.ciya.tag": "Doğa",
   "print.ciya.mean": "dağ",
   "print.ciya.ex": "Dağlar yüksek ve beyaz.",
+  "art.draw": "Çiz",
+  "art.drawing": "Çiziliyor…",
+  "art.drawingN": "{n} resim çiziliyor…",
+  "art.drawAll": "Tüm resimleri çiz",
+  "art.fail": "Resim çizilemedi. Tekrar dene.",
+  "photo.samHint": "Her nesne SAM 3.1 ile fotoğrafından kesilip karta konur.",
+  "photo.sample": "Örnek fotoğrafla dene",
 };
 
 const ku: Extra = {
@@ -467,6 +481,13 @@ const ku: Extra = {
   "print.ciya.tag": "Xweza",
   "print.ciya.mean": "mountain",
   "print.ciya.ex": "The mountains are high and white.",
+  "art.draw": "Xêz bike",
+  "art.drawing": "Tê xêzkirin…",
+  "art.drawingN": "{n} wêne tên xêzkirin…",
+  "art.drawAll": "Hemû wêneyan xêz bike",
+  "art.fail": "Wêne nehat xêzkirin. Dîsa biceribîne.",
+  "photo.samHint": "Her tişt bi SAM 3.1 ji wêneyê te tê birîn û dikeve kartê.",
+  "photo.sample": "Bi wêneyeke nimûne biceribîne",
 };
 
 const de: Extra = {
@@ -622,6 +643,13 @@ const de: Extra = {
   "print.ciya.tag": "Natur",
   "print.ciya.mean": "Berg",
   "print.ciya.ex": "Die Berge sind hoch und weiß.",
+  "art.draw": "Zeichnen",
+  "art.drawing": "Wird gezeichnet…",
+  "art.drawingN": "{n} Bilder werden gezeichnet…",
+  "art.drawAll": "Alle Bilder zeichnen",
+  "art.fail": "Das Bild konnte nicht gezeichnet werden. Versuch es noch einmal.",
+  "photo.samHint": "Jedes Objekt wird von SAM 3.1 aus deinem Foto ausgeschnitten.",
+  "photo.sample": "Mit einem Beispielfoto testen",
 };
 
 const fr: Extra = {
@@ -777,6 +805,13 @@ const fr: Extra = {
   "print.ciya.tag": "Nature",
   "print.ciya.mean": "montagne",
   "print.ciya.ex": "Les montagnes sont hautes et blanches.",
+  "art.draw": "Dessiner",
+  "art.drawing": "Dessin en cours…",
+  "art.drawingN": "{n} dessins en cours…",
+  "art.drawAll": "Dessiner toutes les images",
+  "art.fail": "Impossible de dessiner l'image. Réessaie.",
+  "photo.samHint": "Chaque objet est découpé dans ta photo par SAM 3.1.",
+  "photo.sample": "Essayer avec une photo d'exemple",
 };
 
 const es: Extra = {
@@ -932,6 +967,13 @@ const es: Extra = {
   "print.ciya.tag": "Naturaleza",
   "print.ciya.mean": "montaña",
   "print.ciya.ex": "Las montañas son altas y blancas.",
+  "art.draw": "Dibujar",
+  "art.drawing": "Dibujando…",
+  "art.drawingN": "Dibujando {n}…",
+  "art.drawAll": "Dibujar todas las imágenes",
+  "art.fail": "No se pudo dibujar la imagen. Inténtalo de nuevo.",
+  "photo.samHint": "SAM 3.1 recorta cada objeto de tu foto.",
+  "photo.sample": "Probar con una foto de ejemplo",
 };
 
 const it: Extra = {
@@ -1087,6 +1129,13 @@ const it: Extra = {
   "print.ciya.tag": "Natura",
   "print.ciya.mean": "montagna",
   "print.ciya.ex": "Le montagne sono alte e bianche.",
+  "art.draw": "Disegna",
+  "art.drawing": "Sto disegnando…",
+  "art.drawingN": "Sto disegnando {n}…",
+  "art.drawAll": "Disegna tutte le immagini",
+  "art.fail": "Impossibile disegnare l'immagine. Riprova.",
+  "photo.samHint": "SAM 3.1 ritaglia ogni oggetto dalla tua foto.",
+  "photo.sample": "Prova con una foto di esempio",
 };
 
 const pt: Extra = {
@@ -1242,6 +1291,13 @@ const pt: Extra = {
   "print.ciya.tag": "Natureza",
   "print.ciya.mean": "montanha",
   "print.ciya.ex": "As montanhas são altas e brancas.",
+  "art.draw": "Desenhar",
+  "art.drawing": "Desenhando…",
+  "art.drawingN": "Desenhando {n}…",
+  "art.drawAll": "Desenhar todas as imagens",
+  "art.fail": "Não foi possível desenhar a imagem. Tente de novo.",
+  "photo.samHint": "O SAM 3.1 recorta cada objeto da sua foto.",
+  "photo.sample": "Testar com uma foto de exemplo",
 };
 
 const ru: Extra = {
@@ -1397,6 +1453,13 @@ const ru: Extra = {
   "print.ciya.tag": "Природа",
   "print.ciya.mean": "гора",
   "print.ciya.ex": "Горы высокие и белые.",
+  "art.draw": "Нарисовать",
+  "art.drawing": "Рисую…",
+  "art.drawingN": "Рисую {n}…",
+  "art.drawAll": "Нарисовать все картинки",
+  "art.fail": "Не удалось нарисовать картинку. Попробуй ещё раз.",
+  "photo.samHint": "SAM 3.1 вырезает каждый предмет из твоего фото.",
+  "photo.sample": "Попробовать на примере фото",
 };
 
 const ar: Extra = {
@@ -1552,6 +1615,13 @@ const ar: Extra = {
   "print.ciya.tag": "طبيعة",
   "print.ciya.mean": "جبل",
   "print.ciya.ex": "الجبال عالية وبيضاء.",
+  "art.draw": "ارسمها",
+  "art.drawing": "جارٍ الرسم…",
+  "art.drawingN": "جارٍ رسم {n}…",
+  "art.drawAll": "ارسم كل الصور",
+  "art.fail": "تعذّر رسم الصورة. حاول مرة أخرى.",
+  "photo.samHint": "يقصّ SAM 3.1 كل شيء من صورتك.",
+  "photo.sample": "جرّب بصورة نموذجية",
 };
 
 const fa: Extra = {
@@ -1707,6 +1777,13 @@ const fa: Extra = {
   "print.ciya.tag": "طبیعت",
   "print.ciya.mean": "کوه",
   "print.ciya.ex": "کوه‌ها بلند و سفیدند.",
+  "art.draw": "بکش",
+  "art.drawing": "در حال کشیدن…",
+  "art.drawingN": "در حال کشیدن {n}…",
+  "art.drawAll": "همه تصویرها را بکش",
+  "art.fail": "تصویر کشیده نشد. دوباره امتحان کن.",
+  "photo.samHint": "SAM 3.1 هر شیء را از عکس تو جدا می‌کند.",
+  "photo.sample": "با یک عکس نمونه امتحان کن",
 };
 
 const zh: Extra = {
@@ -1862,6 +1939,13 @@ const zh: Extra = {
   "print.ciya.tag": "自然",
   "print.ciya.mean": "山",
   "print.ciya.ex": "山又高又白。",
+  "art.draw": "画出来",
+  "art.drawing": "正在绘制…",
+  "art.drawingN": "正在绘制 {n} 张…",
+  "art.drawAll": "绘制全部图片",
+  "art.fail": "图片绘制失败，请重试。",
+  "photo.samHint": "SAM 3.1 会把每个物体从你的照片中抠出来。",
+  "photo.sample": "用示例照片试试",
 };
 
 const ja: Extra = {
@@ -2017,6 +2101,13 @@ const ja: Extra = {
   "print.ciya.tag": "自然",
   "print.ciya.mean": "山",
   "print.ciya.ex": "山は高くて白いです。",
+  "art.draw": "絵にする",
+  "art.drawing": "描いています…",
+  "art.drawingN": "{n} 枚描いています…",
+  "art.drawAll": "すべての絵を描く",
+  "art.fail": "絵を描けませんでした。もう一度お試しください。",
+  "photo.samHint": "SAM 3.1 が写真から物を一つずつ切り抜きます。",
+  "photo.sample": "サンプル写真で試す",
 };
 
 const ko: Extra = {
@@ -2172,6 +2263,13 @@ const ko: Extra = {
   "print.ciya.tag": "자연",
   "print.ciya.mean": "산",
   "print.ciya.ex": "산은 높고 하얘요.",
+  "art.draw": "그리기",
+  "art.drawing": "그리는 중…",
+  "art.drawingN": "{n}장 그리는 중…",
+  "art.drawAll": "모든 그림 그리기",
+  "art.fail": "그림을 그리지 못했어요. 다시 시도해 주세요.",
+  "photo.samHint": "SAM 3.1이 사진에서 물건을 하나씩 오려 냅니다.",
+  "photo.sample": "예시 사진으로 해 보기",
 };
 
 export const EXTRA: Record<string, Extra> = { en: enExtra, tr, ku, de, fr, es, it, pt, ru, ar, fa, zh, ja, ko };

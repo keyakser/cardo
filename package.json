@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^1.4.0",
+    "@meta-sam/parser": "^0.1.0",
     "@supabase/supabase-js": "^2.118.0",
     "jspdf": "^4.2.1",
     "next": "^16.4.4",

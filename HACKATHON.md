@@ -24,7 +24,12 @@ Impact 30% · Use of Meta AI tooling 25% · Technical depth 20% · Demo 25%. Sta
 ## Submission form fields
 Team name · Track: **Indie Developer** · Problem statement: **Build for Your World** · X post link (Most Viral) · Project description · Public GitHub repo · 3-min demo video URL · "Describe your use of Meta products" · "Why are Meta's models important to your solution?" · partner feedback (optional, we used none) · survey questions (user's own opinion) · consent checkbox. The user fills and submits; Claude drafts the English texts.
 
-## Planned improvements (agreed direction, not built yet)
+## Done on Nov 4 (evening)
+- SAM 3.1 cut-out cards (lib/sam.ts, lib/art.ts), Muse Image "Draw it" / "Draw all pictures" (app/api/illustrate, components/IllustrateButton.tsx), "Try a sample photo" (public/sample/table.jpg, made by Muse Image). Deployed. Muse Image: `store:false` returns 500, size must be a standard value (1024x1536).
+- README rewritten, SUBMISSION.md has all form texts.
+- Judge video: ~/Developer/cardo-video composition "Judge" (src/judge.tsx, script_judge.json, capture_judge.mjs, mix_judge.py) → ~/Desktop/Claude 1/Cardo_Judge_Demo_3min.mp4 (2:41, Edge TTS voice by the user's choice).
+
+## Planned improvements (original list; 1, 2, 3, 5 done)
 1. **SAM 3.1 cut-out cards** (top priority): Muse Wonder finds objects in the photo (ask it for points/boxes), SAM 3.1 segments each object, each card front shows the object cut out of the user's own photo (sticker look). Big for "Use of Meta tooling".
 2. **Muse Image card illustration**: "Illustrate" button on AI-made cards, riso style prompt, on demand (cost). Helps Best Creative Build.
 3. "Try with a sample photo" button so judges can test without a camera.

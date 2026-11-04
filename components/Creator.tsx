@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import { LANGS, LEVELS, type Deck } from "@/lib/types";
 import { encodeDeck } from "@/lib/share";
+import { deckKey, renderCuts, saveArt } from "@/lib/art";
 import { useI18n, type TKey } from "@/lib/i18n";
 import { useAuth } from "@/lib/auth";
 import KurdolingoPromo from "./KurdolingoPromo";
@@ -81,7 +82,17 @@ export default function Creator({ initialMode }: { initialMode?: Mode }) {
       });
       const data = await res.json().catch(() => ({ error: t("err.timeout") }));
       if (!res.ok) throw new Error(data.code ? t(`err.${data.code}` as TKey) : data.error || t("err.generic"));
-      router.push(`/deck?new=1#d=${await encodeDeck(data as Deck)}`);
+      const { cuts, ...deck } = data as Deck & { cuts?: Parameters<typeof renderCuts>[1] };
+      const code = await encodeDeck(deck);
+      // SAM 3.1 masks → sticker pictures cut from the learner's own photo.
+      if (mode === "photo" && image && cuts?.length) {
+        try {
+          saveArt(deckKey(code), await renderCuts(image, cuts));
+        } catch {
+          /* cards still work without pictures */
+        }
+      }
+      router.push(`/deck?new=1#d=${code}`);
     } catch (e) {
       setError(e instanceof Error ? e.message : t("err.generic"));
       setBusy(false);
@@ -129,7 +140,19 @@ export default function Creator({ initialMode }: { initialMode?: Mode }) {
               <small>{t("photo.hint")}</small>
             </button>
           )}
+          {!image && (
+            <button
+              className="btn ghost sm sample-btn"
+              onClick={async () => {
+                const blob = await (await fetch("/sample/table.jpg")).blob();
+                setImage(await resizeImage(new File([blob], "sample.jpg", { type: blob.type })));
+              }}
+            >
+              {t("photo.sample" as TKey)}
+            </button>
+          )}
           <input className="field" placeholder={t("photo.focus")} value={input} onChange={(e) => setInput(e.target.value)} />
+          <p className="hint sam-hint">{t("photo.samHint" as TKey)}</p>
         </div>
       )}
 

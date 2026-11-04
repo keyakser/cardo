@@ -1,0 +1,191 @@
+{
+  "id": "arts",
+  "levels": {
+    "beginner": [
+      {
+        "ku": "muzîk",
+        "ex": "Ez her roj guh didim muzîkê.",
+        "mean": { "en": "music", "tr": "müzik", "de": "Musik", "fr": "musique", "es": "música", "it": "musica", "pt": "música", "ru": "музыка", "ar": "موسيقى", "fa": "موسیقی", "zh": "音乐", "ja": "音楽", "ko": "음악" },
+        "exTr": { "en": "I listen to music every day.", "tr": "Her gün müzik dinliyorum.", "de": "Ich höre jeden Tag Musik.", "fr": "J'écoute de la musique tous les jours.", "es": "Escucho música todos los días.", "it": "Ascolto musica ogni giorno.", "pt": "Eu ouço música todos os dias.", "ru": "Я слушаю музыку каждый день.", "ar": "أستمع إلى الموسيقى كل يوم.", "fa": "من هر روز موسیقی گوش می‌دهم.", "zh": "我每天听音乐。", "ja": "私は毎日音楽を聴きます。", "ko": "나는 매일 음악을 듣는다." }
+      },
+      {
+        "ku": "stran",
+        "ex": "Ev stran pir xweş e.",
+        "mean": { "en": "song", "tr": "şarkı", "de": "Lied", "fr": "chanson", "es": "canción", "it": "canzone", "pt": "canção", "ru": "песня", "ar": "أغنية", "fa": "آهنگ", "zh": "歌曲", "ja": "歌", "ko": "노래" },
+        "exTr": { "en": "This song is very beautiful.", "tr": "Bu şarkı çok güzel.", "de": "Dieses Lied ist sehr schön.", "fr": "Cette chanson est très belle.", "es": "Esta canción es muy bonita.", "it": "Questa canzone è molto bella.", "pt": "Esta música é muito bonita.", "ru": "Эта песня очень красивая.", "ar": "هذه الأغنية جميلة جدًا.", "fa": "این آهنگ خیلی زیباست.", "zh": "这首歌非常好听。", "ja": "この歌はとてもきれいです。", "ko": "이 노래는 아주 아름답다." }
+      },
+      {
+        "ku": "wêne",
+        "ex": "Zarok wêneyekî xweşik çêdike.",
+        "mean": { "en": "picture", "tr": "resim", "de": "Bild", "fr": "image", "es": "dibujo", "it": "disegno", "pt": "desenho", "ru": "рисунок", "ar": "صورة", "fa": "تصویر", "zh": "图画", "ja": "絵", "ko": "그림" },
+        "exTr": { "en": "The child is making a beautiful picture.", "tr": "Çocuk güzel bir resim yapıyor.", "de": "Das Kind malt ein schönes Bild.", "fr": "L'enfant fait un beau dessin.", "es": "El niño hace un dibujo bonito.", "it": "Il bambino fa un bel disegno.", "pt": "A criança faz um desenho bonito.", "ru": "Ребёнок рисует красивую картинку.", "ar": "الطفل يرسم صورة جميلة.", "fa": "بچه یک تصویر زیبا می‌کشد.", "zh": "孩子在画一幅漂亮的画。", "ja": "子どもがきれいな絵を描いています。", "ko": "아이가 예쁜 그림을 그리고 있다." }
+      },
+      {
+        "ku": "helbest",
+        "ex": "Ez helbesteke kurdî dixwînim.",
+        "mean": { "en": "poem", "tr": "şiir", "de": "Gedicht", "fr": "poème", "es": "poema", "it": "poesia", "pt": "poema", "ru": "стихотворение", "ar": "قصيدة", "fa": "شعر", "zh": "诗", "ja": "詩", "ko": "시" },
+        "exTr": { "en": "I am reading a Kurdish poem.", "tr": "Kürtçe bir şiir okuyorum.", "de": "Ich lese ein kurdisches Gedicht.", "fr": "Je lis un poème kurde.", "es": "Estoy leyendo un poema kurdo.", "it": "Sto leggendo una poesia curda.", "pt": "Estou lendo um poema curdo.", "ru": "Я читаю курдское стихотворение.", "ar": "أقرأ قصيدة كردية.", "fa": "من یک شعر کردی می‌خوانم.", "zh": "我在读一首库尔德语诗。", "ja": "私はクルド語の詩を読んでいます。", "ko": "나는 쿠르드어 시를 읽고 있다." }
+      },
+      {
+        "ku": "dans",
+        "ex": "Ew li dawetê dans dikin.",
+        "mean": { "en": "dance", "tr": "dans", "de": "Tanz", "fr": "danse", "es": "baile", "it": "danza", "pt": "dança", "ru": "танец", "ar": "رقص", "fa": "رقص", "zh": "舞蹈", "ja": "ダンス", "ko": "춤" },
+        "exTr": { "en": "They are dancing at the wedding.", "tr": "Düğünde dans ediyorlar.", "de": "Sie tanzen auf der Hochzeit.", "fr": "Ils dansent au mariage.", "es": "Ellos bailan en la boda.", "it": "Ballano al matrimonio.", "pt": "Eles dançam no casamento.", "ru": "Они танцуют на свадьбе.", "ar": "إنهم يرقصون في العرس.", "fa": "آن‌ها در عروسی می‌رقصند.", "zh": "他们在婚礼上跳舞。", "ja": "彼らは結婚式で踊っています。", "ko": "그들은 결혼식에서 춤을 춘다." }
+      },
+      {
+        "ku": "sînema",
+        "ex": "Em îşev diçin sînemayê.",
+        "mean": { "en": "cinema", "tr": "sinema", "de": "Kino", "fr": "cinéma", "es": "cine", "it": "cinema", "pt": "cinema", "ru": "кино", "ar": "سينما", "fa": "سینما", "zh": "电影院", "ja": "映画館", "ko": "영화관" },
+        "exTr": { "en": "We are going to the cinema tonight.", "tr": "Bu akşam sinemaya gidiyoruz.", "de": "Wir gehen heute Abend ins Kino.", "fr": "Nous allons au cinéma ce soir.", "es": "Esta noche vamos al cine.", "it": "Stasera andiamo al cinema.", "pt": "Hoje à noite vamos ao cinema.", "ru": "Сегодня вечером мы идём в кино.", "ar": "سنذهب إلى السينما الليلة.", "fa": "ما امشب به سینما می‌رویم.", "zh": "我们今晚去电影院。", "ja": "私たちは今夜映画館に行きます。", "ko": "우리는 오늘 밤 영화관에 간다." }
+      },
+      {
+        "ku": "fîlm",
+        "ex": "Ev fîlm li ser jiyana gund e.",
+        "mean": { "en": "film", "tr": "film", "de": "Film", "fr": "film", "es": "película", "it": "film", "pt": "filme", "ru": "фильм", "ar": "فيلم", "fa": "فیلم", "zh": "电影", "ja": "映画", "ko": "영화" },
+        "exTr": { "en": "This film is about village life.", "tr": "Bu film köy hayatı hakkında.", "de": "Dieser Film handelt vom Dorfleben.", "fr": "Ce film parle de la vie au village.", "es": "Esta película trata de la vida en el pueblo.", "it": "Questo film parla della vita di villaggio.", "pt": "Este filme é sobre a vida no vilarejo.", "ru": "Этот фильм о деревенской жизни.", "ar": "هذا الفيلم عن حياة القرية.", "fa": "این فیلم درباره زندگی روستایی است.", "zh": "这部电影讲的是乡村生活。", "ja": "この映画は村の生活についてです。", "ko": "이 영화는 시골 생활에 관한 것이다." }
+      },
+      {
+        "ku": "şano",
+        "ex": "Şanoya bajêr îro vekirî ye.",
+        "mean": { "en": "theater", "tr": "tiyatro", "de": "Theater", "fr": "théâtre", "es": "teatro", "it": "teatro", "pt": "teatro", "ru": "театр", "ar": "مسرح", "fa": "تئاتر", "zh": "剧院", "ja": "劇場", "ko": "극장" },
+        "exTr": { "en": "The city theater is open today.", "tr": "Şehir tiyatrosu bugün açık.", "de": "Das Stadttheater ist heute geöffnet.", "fr": "Le théâtre de la ville est ouvert aujourd'hui.", "es": "El teatro de la ciudad está abierto hoy.", "it": "Il teatro della città oggi è aperto.", "pt": "O teatro da cidade está aberto hoje.", "ru": "Городской театр сегодня открыт.", "ar": "مسرح المدينة مفتوح اليوم.", "fa": "تئاتر شهر امروز باز است.", "zh": "城市剧院今天开放。", "ja": "町の劇場は今日開いています。", "ko": "시립 극장은 오늘 문을 연다." }
+      },
+      {
+        "ku": "huner",
+        "ex": "Huner jiyanê xweşiktir dike.",
+        "mean": { "en": "art", "tr": "sanat", "de": "Kunst", "fr": "art", "es": "arte", "it": "arte", "pt": "arte", "ru": "искусство", "ar": "فن", "fa": "هنر", "zh": "艺术", "ja": "芸術", "ko": "예술" },
+        "exTr": { "en": "Art makes life more beautiful.", "tr": "Sanat hayatı daha güzel yapar.", "de": "Kunst macht das Leben schöner.", "fr": "L'art rend la vie plus belle.", "es": "El arte hace la vida más bonita.", "it": "L'arte rende la vita più bella.", "pt": "A arte deixa a vida mais bonita.", "ru": "Искусство делает жизнь красивее.", "ar": "الفن يجعل الحياة أجمل.", "fa": "هنر زندگی را زیباتر می‌کند.", "zh": "艺术让生活更美好。", "ja": "芸術は人生をより美しくします。", "ko": "예술은 삶을 더 아름답게 만든다." }
+      },
+      {
+        "ku": "stranbêj",
+        "ex": "Stranbêj bi dengekî xweş distirê.",
+        "mean": { "en": "singer", "tr": "şarkıcı", "de": "Sänger", "fr": "chanteur", "es": "cantante", "it": "cantante", "pt": "cantor", "ru": "певец", "ar": "مغني", "fa": "خواننده", "zh": "歌手", "ja": "歌手", "ko": "가수" },
+        "exTr": { "en": "The singer sings with a beautiful voice.", "tr": "Şarkıcı güzel bir sesle şarkı söylüyor.", "de": "Der Sänger singt mit einer schönen Stimme.", "fr": "Le chanteur chante d'une belle voix.", "es": "El cantante canta con una voz bonita.", "it": "Il cantante canta con una bella voce.", "pt": "O cantor canta com uma voz bonita.", "ru": "Певец поёт красивым голосом.", "ar": "يغني المغني بصوت جميل.", "fa": "خواننده با صدای زیبایی می‌خواند.", "zh": "歌手用优美的声音唱歌。", "ja": "歌手はきれいな声で歌っています。", "ko": "가수가 아름다운 목소리로 노래한다." }
+      }
+    ],
+    "intermediate": [
+      {
+        "ku": "wênesazî",
+        "ex": "Xwişka min wênesaziyê dixwîne.",
+        "mean": { "en": "painting", "tr": "ressamlık", "de": "Malerei", "fr": "peinture", "es": "pintura", "it": "pittura", "pt": "pintura", "ru": "живопись", "ar": "الرسم", "fa": "نقاشی", "zh": "绘画", "ja": "絵画", "ko": "회화" },
+        "exTr": { "en": "My sister studies painting.", "tr": "Kız kardeşim resim okuyor.", "de": "Meine Schwester studiert Malerei.", "fr": "Ma sœur étudie la peinture.", "es": "Mi hermana estudia pintura.", "it": "Mia sorella studia pittura.", "pt": "Minha irmã estuda pintura.", "ru": "Моя сестра изучает живопись.", "ar": "أختي تدرس الرسم.", "fa": "خواهرم نقاشی می‌خواند.", "zh": "我姐姐学习绘画。", "ja": "姉は絵画を学んでいます。", "ko": "내 언니는 회화를 공부한다." }
+      },
+      {
+        "ku": "helbestvan",
+        "ex": "Cegerxwîn helbestvanekî navdar e.",
+        "mean": { "en": "poet", "tr": "şair", "de": "Dichter", "fr": "poète", "es": "poeta", "it": "poeta", "pt": "poeta", "ru": "поэт", "ar": "شاعر", "fa": "شاعر", "zh": "诗人", "ja": "詩人", "ko": "시인" },
+        "exTr": { "en": "Cegerxwîn is a famous poet.", "tr": "Cegerxwîn ünlü bir şairdir.", "de": "Cegerxwîn ist ein berühmter Dichter.", "fr": "Cegerxwîn est un poète célèbre.", "es": "Cegerxwîn es un poeta famoso.", "it": "Cegerxwîn è un poeta famoso.", "pt": "Cegerxwîn é um poeta famoso.", "ru": "Джегерхвин — известный поэт.", "ar": "جكرخوين شاعر مشهور.", "fa": "جگرخوین شاعری مشهور است.", "zh": "杰格尔赫温是一位著名诗人。", "ja": "ジェゲルフウィンは有名な詩人です。", "ko": "제게르흐윈은 유명한 시인이다." }
+      },
+      {
+        "ku": "nivîskar",
+        "ex": "Nivîskar pirtûkeke nû dinivîse.",
+        "mean": { "en": "writer", "tr": "yazar", "de": "Schriftsteller", "fr": "écrivain", "es": "escritor", "it": "scrittore", "pt": "escritor", "ru": "писатель", "ar": "كاتب", "fa": "نویسنده", "zh": "作家", "ja": "作家", "ko": "작가" },
+        "exTr": { "en": "The writer is writing a new book.", "tr": "Yazar yeni bir kitap yazıyor.", "de": "Der Schriftsteller schreibt ein neues Buch.", "fr": "L'écrivain écrit un nouveau livre.", "es": "El escritor está escribiendo un libro nuevo.", "it": "Lo scrittore sta scrivendo un nuovo libro.", "pt": "O escritor está escrevendo um livro novo.", "ru": "Писатель пишет новую книгу.", "ar": "الكاتب يكتب كتابًا جديدًا.", "fa": "نویسنده کتاب تازه‌ای می‌نویسد.", "zh": "作家正在写一本新书。", "ja": "作家は新しい本を書いています。", "ko": "작가는 새 책을 쓰고 있다." }
+      },
+      {
+        "ku": "derhêner",
+        "ex": "Derhêner fîlmekî kurdî çêdike.",
+        "mean": { "en": "director", "tr": "yönetmen", "de": "Regisseur", "fr": "réalisateur", "es": "director", "it": "regista", "pt": "diretor", "ru": "режиссёр", "ar": "مخرج", "fa": "کارگردان", "zh": "导演", "ja": "監督", "ko": "감독" },
+        "exTr": { "en": "The director is making a Kurdish film.", "tr": "Yönetmen Kürtçe bir film çekiyor.", "de": "Der Regisseur dreht einen kurdischen Film.", "fr": "Le réalisateur tourne un film kurde.", "es": "El director está rodando una película kurda.", "it": "Il regista sta girando un film curdo.", "pt": "O diretor está fazendo um filme curdo.", "ru": "Режиссёр снимает курдский фильм.", "ar": "المخرج يصنع فيلمًا كرديًا.", "fa": "کارگردان یک فیلم کردی می‌سازد.", "zh": "导演正在拍一部库尔德语电影。", "ja": "監督はクルド語の映画を撮っています。", "ko": "감독이 쿠르드어 영화를 만들고 있다." }
+      },
+      {
+        "ku": "muzîkjen",
+        "ex": "Muzîkjen li ser stranên kevn dixebite.",
+        "mean": { "en": "musician", "tr": "müzisyen", "de": "Musiker", "fr": "musicien", "es": "músico", "it": "musicista", "pt": "músico", "ru": "музыкант", "ar": "موسيقي", "fa": "نوازنده", "zh": "音乐家", "ja": "音楽家", "ko": "음악가" },
+        "exTr": { "en": "The musician is working on old songs.", "tr": "Müzisyen eski şarkılar üzerinde çalışıyor.", "de": "Der Musiker arbeitet an alten Liedern.", "fr": "Le musicien travaille sur de vieilles chansons.", "es": "El músico trabaja en canciones antiguas.", "it": "Il musicista lavora su vecchie canzoni.", "pt": "O músico trabalha em canções antigas.", "ru": "Музыкант работает над старыми песнями.", "ar": "الموسيقي يعمل على أغانٍ قديمة.", "fa": "نوازنده روی آهنگ‌های قدیمی کار می‌کند.", "zh": "音乐家正在改编老歌。", "ja": "音楽家は古い歌に取り組んでいます。", "ko": "음악가가 옛 노래들을 작업하고 있다." }
+      },
+      {
+        "ku": "saz",
+        "ex": "Bavê min saz lê dixe.",
+        "mean": { "en": "saz (long-necked lute)", "tr": "saz", "de": "Saz", "fr": "saz", "es": "saz", "it": "saz", "pt": "saz", "ru": "саз", "ar": "ساز", "fa": "ساز", "zh": "萨兹琴", "ja": "サズ", "ko": "사즈" },
+        "exTr": { "en": "My father plays the saz.", "tr": "Babam saz çalıyor.", "de": "Mein Vater spielt Saz.", "fr": "Mon père joue du saz.", "es": "Mi padre toca el saz.", "it": "Mio padre suona il saz.", "pt": "Meu pai toca saz.", "ru": "Мой отец играет на сазе.", "ar": "أبي يعزف على الساز.", "fa": "پدرم ساز می‌نوازد.", "zh": "我父亲弹萨兹琴。", "ja": "父はサズを弾きます。", "ko": "우리 아버지는 사즈를 연주하신다." }
+      },
+      {
+        "ku": "def",
+        "ex": "Di dawetê de def û zirne tên lêdan.",
+        "mean": { "en": "frame drum", "tr": "def", "de": "Rahmentrommel", "fr": "tambour sur cadre", "es": "pandero", "it": "tamburo a cornice", "pt": "pandeiro", "ru": "бубен", "ar": "دف", "fa": "دف", "zh": "手鼓", "ja": "フレームドラム", "ko": "프레임 드럼" },
+        "exTr": { "en": "At the wedding the drum and zurna are played.", "tr": "Düğünde def ve zurna çalınır.", "de": "Auf der Hochzeit werden Trommel und Zurna gespielt.", "fr": "Au mariage, on joue du tambour et de la zurna.", "es": "En la boda se tocan el pandero y la zurna.", "it": "Al matrimonio si suonano il tamburo e la zurna.", "pt": "No casamento tocam pandeiro e zurna.", "ru": "На свадьбе играют на бубне и зурне.", "ar": "في العرس يُعزف على الدف والزرنة.", "fa": "در عروسی دف و سرنا نواخته می‌شود.", "zh": "婚礼上演奏手鼓和唢呐。", "ja": "結婚式では太鼓とズルナが演奏されます。", "ko": "결혼식에서는 북과 주르나를 연주한다." }
+      },
+      {
+        "ku": "çîrok",
+        "ex": "Dapîra min bi şev çîrokan dibêje.",
+        "mean": { "en": "story", "tr": "hikâye", "de": "Geschichte", "fr": "histoire", "es": "cuento", "it": "racconto", "pt": "história", "ru": "сказка", "ar": "حكاية", "fa": "داستان", "zh": "故事", "ja": "物語", "ko": "이야기" },
+        "exTr": { "en": "My grandmother tells stories at night.", "tr": "Ninem geceleri hikâye anlatır.", "de": "Meine Großmutter erzählt nachts Geschichten.", "fr": "Ma grand-mère raconte des histoires le soir.", "es": "Mi abuela cuenta cuentos por la noche.", "it": "Mia nonna racconta storie di sera.", "pt": "Minha avó conta histórias à noite.", "ru": "Моя бабушка рассказывает сказки по вечерам.", "ar": "جدتي تحكي الحكايات في الليل.", "fa": "مادربزرگم شب‌ها داستان تعریف می‌کند.", "zh": "我奶奶晚上讲故事。", "ja": "祖母は夜に物語を話してくれます。", "ko": "우리 할머니는 밤에 이야기를 들려주신다." }
+      },
+      {
+        "ku": "roman",
+        "ex": "Ez romaneke kurdî dixwînim.",
+        "mean": { "en": "novel", "tr": "roman", "de": "Roman", "fr": "roman", "es": "novela", "it": "romanzo", "pt": "romance", "ru": "роман", "ar": "رواية", "fa": "رمان", "zh": "小说", "ja": "小説", "ko": "소설" },
+        "exTr": { "en": "I am reading a Kurdish novel.", "tr": "Kürtçe bir roman okuyorum.", "de": "Ich lese einen kurdischen Roman.", "fr": "Je lis un roman kurde.", "es": "Estoy leyendo una novela kurda.", "it": "Sto leggendo un romanzo curdo.", "pt": "Estou lendo um romance curdo.", "ru": "Я читаю курдский роман.", "ar": "أقرأ رواية كردية.", "fa": "من یک رمان کردی می‌خوانم.", "zh": "我在读一本库尔德语小说。", "ja": "私はクルド語の小説を読んでいます。", "ko": "나는 쿠르드어 소설을 읽고 있다." }
+      },
+      {
+        "ku": "pêşangeh",
+        "ex": "Pêşangeha wêneyan sibê vedibe.",
+        "mean": { "en": "exhibition", "tr": "sergi", "de": "Ausstellung", "fr": "exposition", "es": "exposición", "it": "mostra", "pt": "exposição", "ru": "выставка", "ar": "معرض", "fa": "نمایشگاه", "zh": "展览", "ja": "展覧会", "ko": "전시회" },
+        "exTr": { "en": "The picture exhibition opens tomorrow.", "tr": "Resim sergisi yarın açılıyor.", "de": "Die Bilderausstellung wird morgen eröffnet.", "fr": "L'exposition de tableaux ouvre demain.", "es": "La exposición de cuadros abre mañana.", "it": "La mostra di quadri apre domani.", "pt": "A exposição de quadros abre amanhã.", "ru": "Выставка картин открывается завтра.", "ar": "يُفتتح معرض الصور غدًا.", "fa": "نمایشگاه تصاویر فردا باز می‌شود.", "zh": "画展明天开幕。", "ja": "絵の展覧会は明日始まります。", "ko": "그림 전시회는 내일 열린다." }
+      }
+    ],
+    "advanced": [
+      {
+        "ku": "peykersazî",
+        "ex": "Peykersazî hunera çêkirina peykeran e.",
+        "mean": { "en": "sculpture", "tr": "heykeltıraşlık", "de": "Bildhauerei", "fr": "sculpture", "es": "escultura", "it": "scultura", "pt": "escultura", "ru": "скульптура", "ar": "النحت", "fa": "مجسمه‌سازی", "zh": "雕塑", "ja": "彫刻", "ko": "조각" },
+        "exTr": { "en": "Sculpture is the art of making statues.", "tr": "Heykeltıraşlık heykel yapma sanatıdır.", "de": "Bildhauerei ist die Kunst, Statuen zu schaffen.", "fr": "La sculpture est l'art de créer des statues.", "es": "La escultura es el arte de hacer estatuas.", "it": "La scultura è l'arte di creare statue.", "pt": "A escultura é a arte de fazer estátuas.", "ru": "Скульптура — это искусство создания статуй.", "ar": "النحت هو فن صنع التماثيل.", "fa": "مجسمه‌سازی هنر ساختن مجسمه است.", "zh": "雕塑是制作雕像的艺术。", "ja": "彫刻は像を作る芸術です。", "ko": "조각은 조각상을 만드는 예술이다." }
+      },
+      {
+        "ku": "wênekêşî",
+        "ex": "Ew li zanîngehê wênekêşiyê dixwîne.",
+        "mean": { "en": "photography", "tr": "fotoğrafçılık", "de": "Fotografie", "fr": "photographie", "es": "fotografía", "it": "fotografia", "pt": "fotografia", "ru": "фотография", "ar": "التصوير الفوتوغرافي", "fa": "عکاسی", "zh": "摄影", "ja": "写真撮影", "ko": "사진술" },
+        "exTr": { "en": "She studies photography at the university.", "tr": "Üniversitede fotoğrafçılık okuyor.", "de": "Sie studiert Fotografie an der Universität.", "fr": "Elle étudie la photographie à l'université.", "es": "Ella estudia fotografía en la universidad.", "it": "Lei studia fotografia all'università.", "pt": "Ela estuda fotografia na universidade.", "ru": "Она изучает фотографию в университете.", "ar": "هي تدرس التصوير الفوتوغرافي في الجامعة.", "fa": "او در دانشگاه عکاسی می‌خواند.", "zh": "她在大学学习摄影。", "ja": "彼女は大学で写真を学んでいます。", "ko": "그녀는 대학에서 사진을 공부한다." }
+      },
+      {
+        "ku": "dengbêj",
+        "ex": "Dengbêj bi saetan bê saz distirê.",
+        "mean": { "en": "dengbêj (Kurdish bard)", "tr": "dengbêj", "de": "Dengbêj (kurdischer Barde)", "fr": "dengbêj (barde kurde)", "es": "dengbêj (bardo kurdo)", "it": "dengbêj (bardo curdo)", "pt": "dengbêj (bardo curdo)", "ru": "денгбеж (курдский сказитель)", "ar": "دنكبيج (منشد كردي)", "fa": "دنگبیژ (آوازخوان سنتی کرد)", "zh": "登贝吉（库尔德说唱艺人）", "ja": "デングベジ（クルドの語り歌い手）", "ko": "뎅베지 (쿠르드 음유시인)" },
+        "exTr": { "en": "The dengbêj sings for hours without an instrument.", "tr": "Dengbêj saatlerce sazsız söylüyor.", "de": "Der Dengbêj singt stundenlang ohne Instrument.", "fr": "Le dengbêj chante pendant des heures sans instrument.", "es": "El dengbêj canta durante horas sin instrumento.", "it": "Il dengbêj canta per ore senza strumento.", "pt": "O dengbêj canta por horas sem instrumento.", "ru": "Денгбеж часами поёт без инструмента.", "ar": "يغني الدنكبيج لساعات بلا آلة موسيقية.", "fa": "دنگبیژ ساعت‌ها بدون ساز می‌خواند.", "zh": "登贝吉不用乐器一唱就是几个小时。", "ja": "デングベジは楽器なしで何時間も歌います。", "ko": "뎅베지는 악기 없이 몇 시간 동안 노래한다." }
+      },
+      {
+        "ku": "wêje",
+        "ex": "Wêjeya kurdî xwedî dîrokeke dewlemend e.",
+        "mean": { "en": "literature", "tr": "edebiyat", "de": "Literatur", "fr": "littérature", "es": "literatura", "it": "letteratura", "pt": "literatura", "ru": "литература", "ar": "أدب", "fa": "ادبیات", "zh": "文学", "ja": "文学", "ko": "문학" },
+        "exTr": { "en": "Kurdish literature has a rich history.", "tr": "Kürt edebiyatının zengin bir tarihi var.", "de": "Die kurdische Literatur hat eine reiche Geschichte.", "fr": "La littérature kurde a une riche histoire.", "es": "La literatura kurda tiene una historia rica.", "it": "La letteratura curda ha una storia ricca.", "pt": "A literatura curda tem uma história rica.", "ru": "У курдской литературы богатая история.", "ar": "للأدب الكردي تاريخ غني.", "fa": "ادبیات کردی تاریخی غنی دارد.", "zh": "库尔德文学有着丰富的历史。", "ja": "クルド文学には豊かな歴史があります。", "ko": "쿠르드 문학은 풍부한 역사를 지니고 있다." }
+      },
+      {
+        "ku": "hunermend",
+        "ex": "Hunermendên ciwan li vê pêşangehê ne.",
+        "mean": { "en": "artist", "tr": "sanatçı", "de": "Künstler", "fr": "artiste", "es": "artista", "it": "artista", "pt": "artista", "ru": "художник", "ar": "فنان", "fa": "هنرمند", "zh": "艺术家", "ja": "芸術家", "ko": "예술가" },
+        "exTr": { "en": "Young artists are at this exhibition.", "tr": "Genç sanatçılar bu sergide.", "de": "Junge Künstler sind auf dieser Ausstellung.", "fr": "De jeunes artistes sont à cette exposition.", "es": "Hay artistas jóvenes en esta exposición.", "it": "Giovani artisti sono a questa mostra.", "pt": "Jovens artistas estão nesta exposição.", "ru": "На этой выставке молодые художники.", "ar": "الفنانون الشباب في هذا المعرض.", "fa": "هنرمندان جوان در این نمایشگاه هستند.", "zh": "年轻艺术家们在这个展览上。", "ja": "若い芸術家たちがこの展覧会に来ています。", "ko": "젊은 예술가들이 이 전시회에 있다." }
+      },
+      {
+        "ku": "mîmarî",
+        "ex": "Mîmariya bajarê kevn bala min dikişîne.",
+        "mean": { "en": "architecture", "tr": "mimarlık", "de": "Architektur", "fr": "architecture", "es": "arquitectura", "it": "architettura", "pt": "arquitetura", "ru": "архитектура", "ar": "العمارة", "fa": "معماری", "zh": "建筑艺术", "ja": "建築", "ko": "건축" },
+        "exTr": { "en": "The architecture of the old city catches my attention.", "tr": "Eski şehrin mimarisi dikkatimi çekiyor.", "de": "Die Architektur der Altstadt fasziniert mich.", "fr": "L'architecture de la vieille ville attire mon attention.", "es": "La arquitectura de la ciudad antigua me llama la atención.", "it": "L'architettura della città vecchia attira la mia attenzione.", "pt": "A arquitetura da cidade antiga chama minha atenção.", "ru": "Архитектура старого города привлекает моё внимание.", "ar": "تجذب عمارة المدينة القديمة انتباهي.", "fa": "معماری شهر قدیمی توجه مرا جلب می‌کند.", "zh": "老城的建筑吸引了我的注意。", "ja": "旧市街の建築が私の目を引きます。", "ko": "옛 도시의 건축이 내 관심을 끈다." }
+      },
+      {
+        "ku": "awaz",
+        "ex": "Awaza vê stranê pir xemgîn e.",
+        "mean": { "en": "melody", "tr": "ezgi", "de": "Melodie", "fr": "mélodie", "es": "melodía", "it": "melodia", "pt": "melodia", "ru": "мелодия", "ar": "لحن", "fa": "آواز", "zh": "旋律", "ja": "メロディー", "ko": "선율" },
+        "exTr": { "en": "The melody of this song is very sad.", "tr": "Bu şarkının ezgisi çok hüzünlü.", "de": "Die Melodie dieses Liedes ist sehr traurig.", "fr": "La mélodie de cette chanson est très triste.", "es": "La melodía de esta canción es muy triste.", "it": "La melodia di questa canzone è molto triste.", "pt": "A melodia desta canção é muito triste.", "ru": "Мелодия этой песни очень грустная.", "ar": "لحن هذه الأغنية حزين جدًا.", "fa": "آواز این آهنگ خیلی غمگین است.", "zh": "这首歌的旋律非常悲伤。", "ja": "この歌のメロディーはとても悲しいです。", "ko": "이 노래의 선율은 아주 슬프다." }
+      },
+      {
+        "ku": "kilam",
+        "ex": "Kilamên dengbêjan dîroka gel vedibêjin.",
+        "mean": { "en": "traditional song", "tr": "türkü", "de": "Volkslied", "fr": "chant traditionnel", "es": "canción tradicional", "it": "canto tradizionale", "pt": "canção tradicional", "ru": "народная песня", "ar": "أغنية تراثية", "fa": "ترانه محلی", "zh": "民歌", "ja": "民謡", "ko": "민요" },
+        "exTr": { "en": "The dengbêjs' songs tell the history of the people.", "tr": "Dengbêjlerin kılamları halkın tarihini anlatır.", "de": "Die Lieder der Dengbêjs erzählen die Geschichte des Volkes.", "fr": "Les chants des dengbêjs racontent l'histoire du peuple.", "es": "Las canciones de los dengbêj cuentan la historia del pueblo.", "it": "I canti dei dengbêj raccontano la storia del popolo.", "pt": "As canções dos dengbêjs contam a história do povo.", "ru": "Песни денгбежей рассказывают историю народа.", "ar": "تروي أغاني الدنكبيجين تاريخ الشعب.", "fa": "ترانه‌های دنگبیژها تاریخ مردم را روایت می‌کنند.", "zh": "登贝吉的歌曲讲述着人民的历史。", "ja": "デングベジの歌は民衆の歴史を語ります。", "ko": "뎅베지들의 노래는 민중의 역사를 들려준다." }
+      },
+      {
+        "ku": "xweşnivîsî",
+        "ex": "Xweşnivîsî hunera nivîsîna xweşik e.",
+        "mean": { "en": "calligraphy", "tr": "hat sanatı", "de": "Kalligrafie", "fr": "calligraphie", "es": "caligrafía", "it": "calligrafia", "pt": "caligrafia", "ru": "каллиграфия", "ar": "الخط العربي", "fa": "خوشنویسی", "zh": "书法", "ja": "書道", "ko": "서예" },
+        "exTr": { "en": "Calligraphy is the art of beautiful writing.", "tr": "Hat sanatı güzel yazı yazma sanatıdır.", "de": "Kalligrafie ist die Kunst des schönen Schreibens.", "fr": "La calligraphie est l'art de la belle écriture.", "es": "La caligrafía es el arte de escribir bonito.", "it": "La calligrafia è l'arte della bella scrittura.", "pt": "A caligrafia é a arte da escrita bonita.", "ru": "Каллиграфия — это искусство красивого письма.", "ar": "الخط هو فن الكتابة الجميلة.", "fa": "خوشنویسی هنر زیبا نوشتن است.", "zh": "书法是写出优美文字的艺术。", "ja": "書道は美しく書く芸術です。", "ko": "서예는 아름답게 글씨를 쓰는 예술이다." }
+      },
+      {
+        "ku": "destan",
+        "ex": "Mem û Zîn destaneke navdar a kurdî ye.",
+        "mean": { "en": "epic", "tr": "destan", "de": "Epos", "fr": "épopée", "es": "epopeya", "it": "epopea", "pt": "epopeia", "ru": "эпос", "ar": "ملحمة", "fa": "حماسه", "zh": "史诗", "ja": "叙事詩", "ko": "서사시" },
+        "exTr": { "en": "Mem and Zîn is a famous Kurdish epic.", "tr": "Mem ü Zin ünlü bir Kürt destanıdır.", "de": "Mem und Zîn ist ein berühmtes kurdisches Epos.", "fr": "Mem et Zîn est une célèbre épopée kurde.", "es": "Mem y Zîn es una famosa epopeya kurda.", "it": "Mem e Zîn è una famosa epopea curda.", "pt": "Mem e Zîn é uma famosa epopeia curda.", "ru": "«Мам и Зин» — знаменитый курдский эпос.", "ar": "مم وزين ملحمة كردية مشهورة.", "fa": "مم و زین حماسه‌ای مشهور کردی است.", "zh": "《梅姆与津》是一部著名的库尔德史诗。", "ja": "『メムとズィーン』は有名なクルドの叙事詩です。", "ko": "'멤과 진'은 유명한 쿠르드 서사시이다." }
+      }
+    ]
+  }
+}

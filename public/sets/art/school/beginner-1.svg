@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 380">
+  <title>pirtûk — book</title>
+  <defs>
+    <filter id="g" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  7 0 0 0 -1.55" result="speckle"/>
+      <feComposite in="SourceGraphic" in2="speckle" operator="in" result="grainy"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="2" result="warp"/>
+      <feDisplacementMap in="grainy" in2="warp" scale="4" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="p" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="1" seed="11" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  -9 0 0 0 3.2" result="dots"/>
+      <feComposite in="SourceGraphic" in2="dots" operator="in"/>
+    </filter>
+  </defs>
+  <rect width="300" height="380" fill="#6a9cc8"/>
+  <rect width="300" height="380" fill="#fff6e6" opacity="0.5" filter="url(#p)"/>
+  <g filter="url(#g)">
+    <ellipse cx="150" cy="300" rx="78" ry="12" fill="#1a1714" opacity="0.85"/><path d="M50 150L150 160L250 150V266L150 276L50 266z" fill="#f04e1f"/><path d="M146 152Q104.0 130 58 142V254Q104.0 244 146 262z" fill="#f1e3c8"/><path d="M154 152Q196.0 130 242 142V254Q196.0 244 154 262z" fill="#f1e3c8"/><line x1="150" y1="154" x2="150" y2="266" stroke="#1a1714" stroke-width="6" stroke-linecap="round"/><path d="M78 170q30-8 58 0M78 196q30-8 58 0M78 222q30-8 58 0M164 170q30-8 58 0M164 196q30-8 58 0" stroke="#6a9cc8" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+</svg>

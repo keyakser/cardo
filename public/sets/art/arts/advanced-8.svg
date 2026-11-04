@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 380">
+  <title>kilam — traditional song</title>
+  <defs>
+    <filter id="g" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  7 0 0 0 -1.55" result="speckle"/>
+      <feComposite in="SourceGraphic" in2="speckle" operator="in" result="grainy"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="2" result="warp"/>
+      <feDisplacementMap in="grainy" in2="warp" scale="4" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="p" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="1" seed="11" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  -9 0 0 0 3.2" result="dots"/>
+      <feComposite in="SourceGraphic" in2="dots" operator="in"/>
+    </filter>
+  </defs>
+  <rect width="300" height="380" fill="#8c8519"/>
+  <rect width="300" height="380" fill="#fff6e6" opacity="0.5" filter="url(#p)"/>
+  <g filter="url(#g)">
+    <g transform="rotate(-35 150 190)"><rect x="36" y="180" width="230" height="22" rx="11" fill="#1a1714"/><rect x="54" y="180" width="20" height="22" fill="#f04e1f"/><path d="M115 191a5 5 0 1 0 10 0a5 5 0 1 0 -10 0M139 191a5 5 0 1 0 10 0a5 5 0 1 0 -10 0M163 191a5 5 0 1 0 10 0a5 5 0 1 0 -10 0M187 191a5 5 0 1 0 10 0a5 5 0 1 0 -10 0M211 191a5 5 0 1 0 10 0a5 5 0 1 0 -10 0M235 191a5 5 0 1 0 10 0a5 5 0 1 0 -10 0" fill="#f1e3c8"/></g>
+    <ellipse cx="206" cy="110" rx="14" ry="10" fill="#f04e1f" transform="rotate(-20 206 110)"/>
+    <line x1="218" y1="106" x2="218" y2="54" stroke="#f04e1f" stroke-width="5" stroke-linecap="round"/>
+    <path d="M218 56C232 62 240 74 234 90" stroke="#f04e1f" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <ellipse cx="240" cy="186" rx="12" ry="9" fill="#f1e3c8" transform="rotate(-20 240 186)"/>
+    <line x1="250" y1="182" x2="250" y2="140" stroke="#f1e3c8" stroke-width="4" stroke-linecap="round"/>
+    <path d="M60 120Q80 100 100 120T140 120" stroke="#f1e3c8" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+</svg>

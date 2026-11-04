@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 380">
+  <title>dotmam — cousin (daughter of paternal uncle)</title>
+  <defs>
+    <filter id="g" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  7 0 0 0 -1.55" result="speckle"/>
+      <feComposite in="SourceGraphic" in2="speckle" operator="in" result="grainy"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="2" result="warp"/>
+      <feDisplacementMap in="grainy" in2="warp" scale="4" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="p" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="1" seed="11" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  -9 0 0 0 3.2" result="dots"/>
+      <feComposite in="SourceGraphic" in2="dots" operator="in"/>
+    </filter>
+  </defs>
+  <rect width="300" height="380" fill="#f04e1f"/>
+  <rect width="300" height="380" fill="#fff6e6" opacity="0.5" filter="url(#p)"/>
+  <g filter="url(#g)">
+    <ellipse cx="150" cy="325" rx="125" ry="18.8" fill="#1a1714" opacity="0.85"/>
+    <path d="M173.7 325V193Q173.7 158.2 208.5 158.2H235.5Q270.3 158.2 270.3 193V325Z" fill="#1a1714"/>
+    <circle cx="222" cy="122.6" r="27.6" fill="#f1e3c8"/>
+    <path d="M193.3 121.2A28.7 28.7 0 0 1 250.7 121.2Q222 106 193.3 121.2Z" fill="#1a1714"/>
+    <path d="M58.8 325V256.1Q58.8 238 76.9 238H91.1Q109.2 238 109.2 256.1V325Z" fill="#f1e3c8"/>
+    <circle cx="84" cy="219.4" r="14.4" fill="#1a1714"/>
+    <path d="M69 218.7A15 15 0 0 1 99 218.7Q84 210.8 69 218.7Z" fill="#8c8519"/>
+    <path d="M114.9 325L124.7 250.4Q124.7 230.8 144.4 230.8H159.6Q179.3 230.8 179.3 250.4L189.1 325Z" fill="#8c8519"/>
+    <circle cx="152" cy="210.6" r="15.6" fill="#f1e3c8"/>
+    <circle cx="134.1" cy="213.7" r="6.6" fill="#1a1714"/>
+    <circle cx="169.9" cy="213.7" r="6.6" fill="#1a1714"/>
+  </g>
+</svg>

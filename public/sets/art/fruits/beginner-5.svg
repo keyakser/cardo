@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 380">
+  <title>mişmiş — apricot</title>
+  <defs>
+    <filter id="g" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  7 0 0 0 -1.55" result="speckle"/>
+      <feComposite in="SourceGraphic" in2="speckle" operator="in" result="grainy"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="2" result="warp"/>
+      <feDisplacementMap in="grainy" in2="warp" scale="4" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="p" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="1" seed="11" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  -9 0 0 0 3.2" result="dots"/>
+      <feComposite in="SourceGraphic" in2="dots" operator="in"/>
+    </filter>
+  </defs>
+  <rect width="300" height="380" fill="#6a9cc8"/>
+  <rect width="300" height="380" fill="#fff6e6" opacity="0.5" filter="url(#p)"/>
+  <g filter="url(#g)">
+    <ellipse cx="150" cy="300" rx="80" ry="12" fill="#1a1714" opacity="0.85"/>
+    <circle cx="150" cy="204" r="86" fill="#f04e1f"/>
+    <ellipse cx="118" cy="220" rx="42" ry="50" fill="#e58bcb" opacity="0.85"/>
+    <path d="M150 122c-20 30-22 112 0 164" stroke="#1a1714" stroke-width="6" stroke-linecap="round" fill="none" opacity="0.45"/>
+    <path d="M96 184c-4 20 0 40 10 52" stroke="#f1e3c8" stroke-width="10" stroke-linecap="round" fill="none"/>
+    <rect x="145" y="100" width="10" height="24" rx="4" fill="#1a1714" transform="rotate(8 150 112.0)"/>
+    <path d="M0 0c19.2 -19.2 44.8 -19.2 64 0c-19.2 19.2 -44.8 19.2 -64 0z" fill="#8c8519" transform="translate(156 116) rotate(-35)"/>
+  </g>
+</svg>

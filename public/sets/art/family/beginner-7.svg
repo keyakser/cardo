@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 380">
+  <title>malbat — family</title>
+  <defs>
+    <filter id="g" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  7 0 0 0 -1.55" result="speckle"/>
+      <feComposite in="SourceGraphic" in2="speckle" operator="in" result="grainy"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="2" result="warp"/>
+      <feDisplacementMap in="grainy" in2="warp" scale="4" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="p" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="1" seed="11" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  -9 0 0 0 3.2" result="dots"/>
+      <feComposite in="SourceGraphic" in2="dots" operator="in"/>
+    </filter>
+  </defs>
+  <rect width="300" height="380" fill="#8c8519"/>
+  <rect width="300" height="380" fill="#fff6e6" opacity="0.5" filter="url(#p)"/>
+  <g filter="url(#g)">
+    <ellipse cx="150" cy="325" rx="132" ry="19.8" fill="#1a1714" opacity="0.85"/>
+    <path d="M32 325V210.2Q32 180 62.2 180H85.8Q116 180 116 210.2V325Z" fill="#6a9cc8"/>
+    <circle cx="74" cy="149" r="24" fill="#f1e3c8"/>
+    <path d="M49 147.8A25 25 0 0 1 99 147.8Q74 134.6 49 147.8Z" fill="#1a1714"/>
+    <rect x="198.6" y="133.9" width="54.7" height="66.1" rx="25.1" fill="#1a1714"/>
+    <path d="M171.7 325L186.1 216Q186.1 187.3 214.8 187.3H237.2Q265.9 187.3 265.9 216L280.3 325Z" fill="#e58bcb"/>
+    <circle cx="226" cy="157.8" r="22.8" fill="#f1e3c8"/>
+    <path d="M104.9 325V261.9Q104.9 245.2 121.5 245.2H134.5Q151.1 245.2 151.1 261.9V325Z" fill="#f04e1f"/>
+    <circle cx="128" cy="228.2" r="13.2" fill="#f1e3c8"/>
+    <path d="M114.3 227.5A13.7 13.7 0 0 1 141.7 227.5Q128 220.3 114.3 227.5Z" fill="#1a1714"/>
+    <path d="M144.6 325L151.8 269.9Q151.8 255.4 166.4 255.4H177.6Q192.2 255.4 192.2 269.9L199.4 325Z" fill="#f1e3c8"/>
+    <circle cx="172" cy="240.5" r="11.5" fill="#1a1714"/>
+    <circle cx="158.8" cy="242.8" r="4.8" fill="#1a1714"/>
+    <circle cx="185.2" cy="242.8" r="4.8" fill="#1a1714"/>
+  </g>
+</svg>

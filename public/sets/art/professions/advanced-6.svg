@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 380">
+  <title>mîmar — architect</title>
+  <defs>
+    <filter id="g" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  7 0 0 0 -1.55" result="speckle"/>
+      <feComposite in="SourceGraphic" in2="speckle" operator="in" result="grainy"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="2" result="warp"/>
+      <feDisplacementMap in="grainy" in2="warp" scale="4" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="p" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="1" seed="11" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  -9 0 0 0 3.2" result="dots"/>
+      <feComposite in="SourceGraphic" in2="dots" operator="in"/>
+    </filter>
+  </defs>
+  <rect width="300" height="380" fill="#f1e3c8"/>
+  <rect width="300" height="380" fill="#fff6e6" opacity="0.5" filter="url(#p)"/>
+  <g filter="url(#g)">
+    <ellipse cx="150" cy="325" rx="112" ry="16.8" fill="#1a1714" opacity="0.85"/>
+    <path d="M62 325V210.2Q62 180 92.2 180H115.8Q146 180 146 210.2V325Z" fill="#6a9cc8"/>
+    <line x1="134.2" y1="195.1" x2="170" y2="210" stroke="#6a9cc8" stroke-width="20.2" stroke-linecap="round"/>
+    <circle cx="104" cy="149" r="24" fill="#1a1714"/>
+    <path d="M79 147.8A25 25 0 0 1 129 147.8Q104 134.6 79 147.8Z" fill="#8c8519"/>
+    <polygon points="176,300 176,156 268,300" fill="#8c8519"/>
+    <polygon points="194,270 194,214 232,270" fill="#f1e3c8"/>
+    <rect x="140" y="196" width="34" height="120" rx="10" fill="#f04e1f" transform="rotate(-6 157 256)"/>
+    <line x1="146" y1="200" x2="170" y2="196" stroke="#1a1714" stroke-width="4" stroke-linecap="round"/>
+  </g>
+</svg>

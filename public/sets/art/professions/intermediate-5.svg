@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 380">
+  <title>wênekêş — photographer</title>
+  <defs>
+    <filter id="g" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  7 0 0 0 -1.55" result="speckle"/>
+      <feComposite in="SourceGraphic" in2="speckle" operator="in" result="grainy"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="2" result="warp"/>
+      <feDisplacementMap in="grainy" in2="warp" scale="4" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="p" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="1" seed="11" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  -9 0 0 0 3.2" result="dots"/>
+      <feComposite in="SourceGraphic" in2="dots" operator="in"/>
+    </filter>
+  </defs>
+  <rect width="300" height="380" fill="#8c8519"/>
+  <rect width="300" height="380" fill="#fff6e6" opacity="0.5" filter="url(#p)"/>
+  <g filter="url(#g)">
+    <ellipse cx="150" cy="325" rx="78" ry="11.7" fill="#1a1714" opacity="0.85"/>
+    <path d="M103.8 325V198.8Q103.8 165.5 137.1 165.5H162.9Q196.2 165.5 196.2 198.8V325Z" fill="#e58bcb"/>
+    <line x1="116.7" y1="182.1" x2="108" y2="170" stroke="#e58bcb" stroke-width="22.2" stroke-linecap="round"/>
+    <line x1="183.3" y1="182.1" x2="192" y2="170" stroke="#e58bcb" stroke-width="22.2" stroke-linecap="round"/>
+    <circle cx="150" cy="131.4" r="26.4" fill="#1a1714"/>
+    <path d="M122.5 130.1A27.5 27.5 0 0 1 177.5 130.1Q150 115.6 122.5 130.1Z" fill="#1a1714"/>
+    <rect x="88" y="134" width="124" height="80" rx="10" fill="#1a1714"/>
+    <rect x="124" y="120" width="40" height="18" rx="4" fill="#1a1714"/>
+    <circle cx="150" cy="174" r="28" fill="#f1e3c8"/>
+    <circle cx="150" cy="174" r="16" fill="#6a9cc8"/>
+    <rect x="184" y="144" width="16" height="10" rx="2" fill="#f04e1f"/>
+  </g>
+</svg>

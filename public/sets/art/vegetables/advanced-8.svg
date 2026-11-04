@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 380">
+  <title>bamî — okra</title>
+  <defs>
+    <filter id="g" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  7 0 0 0 -1.55" result="speckle"/>
+      <feComposite in="SourceGraphic" in2="speckle" operator="in" result="grainy"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="2" result="warp"/>
+      <feDisplacementMap in="grainy" in2="warp" scale="4" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="p" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="1" seed="11" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  -9 0 0 0 3.2" result="dots"/>
+      <feComposite in="SourceGraphic" in2="dots" operator="in"/>
+    </filter>
+  </defs>
+  <rect width="300" height="380" fill="#6a9cc8"/>
+  <rect width="300" height="380" fill="#fff6e6" opacity="0.5" filter="url(#p)"/>
+  <g filter="url(#g)">
+    <ellipse cx="150" cy="300" rx="104" ry="12" fill="#1a1714" opacity="0.85"/>
+    <rect x="-10" y="-24" width="20" height="28" rx="6" fill="#1a1714" transform="translate(96 110) rotate(22)"/>
+    <path d="M-26 0C-26 -6 26 -6 26 0L4 170Q0 180 -4 170Z" fill="#8c8519" transform="translate(96 110) rotate(22)"/>
+    <path d="M-10 10L-2 160M10 10L2 160" stroke="#f1e3c8" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.6" transform="translate(96 110) rotate(22)"/>
+    <rect x="-10" y="-24" width="20" height="28" rx="6" fill="#1a1714" transform="translate(150 100) rotate(0)"/>
+    <path d="M-26 0C-26 -6 26 -6 26 0L4 170Q0 180 -4 170Z" fill="#8c8519" transform="translate(150 100) rotate(0)"/>
+    <path d="M-10 10L-2 160M10 10L2 160" stroke="#f1e3c8" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.6" transform="translate(150 100) rotate(0)"/>
+    <rect x="-10" y="-24" width="20" height="28" rx="6" fill="#1a1714" transform="translate(204 110) rotate(-22)"/>
+    <path d="M-26 0C-26 -6 26 -6 26 0L4 170Q0 180 -4 170Z" fill="#8c8519" transform="translate(204 110) rotate(-22)"/>
+    <path d="M-10 10L-2 160M10 10L2 160" stroke="#f1e3c8" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.6" transform="translate(204 110) rotate(-22)"/>
+  </g>
+</svg>

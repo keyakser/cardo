@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 380">
+  <title>tenîs — tennis</title>
+  <defs>
+    <filter id="g" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  7 0 0 0 -1.55" result="speckle"/>
+      <feComposite in="SourceGraphic" in2="speckle" operator="in" result="grainy"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="2" result="warp"/>
+      <feDisplacementMap in="grainy" in2="warp" scale="4" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="p" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="1" seed="11" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  -9 0 0 0 3.2" result="dots"/>
+      <feComposite in="SourceGraphic" in2="dots" operator="in"/>
+    </filter>
+  </defs>
+  <rect width="300" height="380" fill="#e58bcb"/>
+  <rect width="300" height="380" fill="#fff6e6" opacity="0.5" filter="url(#p)"/>
+  <g filter="url(#g)">
+    <ellipse cx="170" cy="318" rx="80" ry="12" fill="#1a1714" opacity="0.85"/>
+    <g transform="rotate(-28 150 190)"><rect x="143" y="212" width="14" height="92" rx="6" fill="#1a1714"/><polygon points="126,208 174,208 157,226 143,226" fill="#1a1714"/><ellipse cx="150" cy="140" rx="58" ry="72" fill="#f1e3c8"/><path d="M105 94.6V185.4M120 78.4V201.6M135 70.4V209.6M150 68V212M165 70.4V209.6M180 78.4V201.6M195 94.6V185.4M111.6 86H188.4M99.8 104H200.2M93.8 122H206.2M92 140H208M93.8 158H206.2M99.8 176H200.2M111.6 194H188.4" stroke="#1a1714" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/><ellipse cx="150" cy="140" rx="58" ry="72" fill="none" stroke="#1a1714" stroke-width="12"/></g>
+    <circle cx="228" cy="290" r="22" fill="#8c8519"/>
+    <path d="M212 278Q228 292 244 278" stroke="#f1e3c8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+</svg>

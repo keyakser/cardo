@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 380">
+  <title>lêkolîner — researcher</title>
+  <defs>
+    <filter id="g" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  7 0 0 0 -1.55" result="speckle"/>
+      <feComposite in="SourceGraphic" in2="speckle" operator="in" result="grainy"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="2" result="warp"/>
+      <feDisplacementMap in="grainy" in2="warp" scale="4" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="p" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="1" seed="11" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  -9 0 0 0 3.2" result="dots"/>
+      <feComposite in="SourceGraphic" in2="dots" operator="in"/>
+    </filter>
+  </defs>
+  <rect width="300" height="380" fill="#8c8519"/>
+  <rect width="300" height="380" fill="#fff6e6" opacity="0.5" filter="url(#p)"/>
+  <g filter="url(#g)">
+    <ellipse cx="150" cy="325" rx="110" ry="16.5" fill="#1a1714" opacity="0.85"/>
+    <path d="M63.9 325V204.5Q63.9 172.7 95.7 172.7H120.3Q152.1 172.7 152.1 204.5V325Z" fill="#f1e3c8"/>
+    <line x1="139.8" y1="188.6" x2="186" y2="196" stroke="#f1e3c8" stroke-width="21.2" stroke-linecap="round"/>
+    <circle cx="108" cy="140.2" r="25.2" fill="#1a1714"/>
+    <path d="M81.8 138.9A26.2 26.2 0 0 1 134.2 138.9Q108 125.1 81.8 138.9Z" fill="#1a1714"/>
+    <circle cx="216" cy="160" r="40" fill="#6a9cc8" stroke="#1a1714" stroke-width="13"/>
+    <path d="M196 146a24 24 0 0 1 20-12" stroke="#f1e3c8" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <line x1="188" y1="192" x2="158" y2="232" stroke="#1a1714" stroke-width="15" stroke-linecap="round"/>
+  </g>
+</svg>

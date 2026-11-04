@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 380">
+  <title>sindoq — chest, trunk</title>
+  <defs>
+    <filter id="g" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  7 0 0 0 -1.55" result="speckle"/>
+      <feComposite in="SourceGraphic" in2="speckle" operator="in" result="grainy"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="2" result="warp"/>
+      <feDisplacementMap in="grainy" in2="warp" scale="4" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="p" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="1" seed="11" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  -9 0 0 0 3.2" result="dots"/>
+      <feComposite in="SourceGraphic" in2="dots" operator="in"/>
+    </filter>
+  </defs>
+  <rect width="300" height="380" fill="#6a9cc8"/>
+  <rect width="300" height="380" fill="#fff6e6" opacity="0.5" filter="url(#p)"/>
+  <g filter="url(#g)">
+    <ellipse cx="150" cy="296" rx="110" ry="12" fill="#1a1714" opacity="0.85"/><rect x="56" y="160" width="188" height="130" rx="8" fill="#f04e1f"/><path d="M56 160v-30c0-46 188-46 188 0v30z" fill="#f1e3c8"/><rect x="92" y="104" width="16" height="186" fill="#1a1714"/><rect x="192" y="104" width="16" height="186" fill="#1a1714"/><rect x="50" y="154" width="200" height="14" rx="4" fill="#1a1714"/><rect x="134" y="148" width="32" height="40" rx="6" fill="#1a1714"/><circle cx="150" cy="166" r="5" fill="#1a1714"/>
+  </g>
+</svg>

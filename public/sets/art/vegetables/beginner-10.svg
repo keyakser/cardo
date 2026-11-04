@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 380">
+  <title>nok — chickpea</title>
+  <defs>
+    <filter id="g" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  7 0 0 0 -1.55" result="speckle"/>
+      <feComposite in="SourceGraphic" in2="speckle" operator="in" result="grainy"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="2" result="warp"/>
+      <feDisplacementMap in="grainy" in2="warp" scale="4" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="p" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="1" seed="11" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  -9 0 0 0 3.2" result="dots"/>
+      <feComposite in="SourceGraphic" in2="dots" operator="in"/>
+    </filter>
+  </defs>
+  <rect width="300" height="380" fill="#8c8519"/>
+  <rect width="300" height="380" fill="#fff6e6" opacity="0.5" filter="url(#p)"/>
+  <g filter="url(#g)">
+    <ellipse cx="150" cy="304" rx="106" ry="12" fill="#1a1714" opacity="0.85"/>
+    <circle cx="97" cy="176" r="15" fill="#f1e3c8"/>
+    <circle cx="106" cy="167" r="5" fill="#f1e3c8"/>
+    <circle cx="121" cy="176" r="15" fill="#f1e3c8"/>
+    <circle cx="130" cy="167" r="5" fill="#f1e3c8"/>
+    <circle cx="150" cy="176" r="15" fill="#f1e3c8"/>
+    <circle cx="159" cy="167" r="5" fill="#f1e3c8"/>
+    <circle cx="173" cy="176" r="15" fill="#f1e3c8"/>
+    <circle cx="182" cy="167" r="5" fill="#f1e3c8"/>
+    <circle cx="203" cy="176" r="15" fill="#f1e3c8"/>
+    <circle cx="212" cy="167" r="5" fill="#f1e3c8"/>
+    <circle cx="79" cy="192" r="15" fill="#f1e3c8"/>
+    <circle cx="88" cy="183" r="5" fill="#f1e3c8"/>
+    <circle cx="106" cy="192" r="15" fill="#f1e3c8"/>
+    <circle cx="115" cy="183" r="5" fill="#f1e3c8"/>
+    <circle cx="131" cy="192" r="15" fill="#f1e3c8"/>
+    <circle cx="140" cy="183" r="5" fill="#f1e3c8"/>
+    <circle cx="157" cy="192" r="15" fill="#f1e3c8"/>
+    <circle cx="166" cy="183" r="5" fill="#f1e3c8"/>
+    <circle cx="182" cy="192" r="15" fill="#f1e3c8"/>
+    <circle cx="191" cy="183" r="5" fill="#f1e3c8"/>
+    <circle cx="204" cy="192" r="15" fill="#f1e3c8"/>
+    <circle cx="213" cy="183" r="5" fill="#f1e3c8"/>
+    <circle cx="70" cy="208" r="15" fill="#f1e3c8"/>
+    <circle cx="79" cy="199" r="5" fill="#f1e3c8"/>
+    <circle cx="93" cy="208" r="15" fill="#f1e3c8"/>
+    <circle cx="102" cy="199" r="5" fill="#f1e3c8"/>
+    <circle cx="122" cy="208" r="15" fill="#f1e3c8"/>
+    <circle cx="131" cy="199" r="5" fill="#f1e3c8"/>
+    <circle cx="143" cy="208" r="15" fill="#f1e3c8"/>
+    <circle cx="152" cy="199" r="5" fill="#f1e3c8"/>
+    <circle cx="173" cy="208" r="15" fill="#f1e3c8"/>
+    <circle cx="182" cy="199" r="5" fill="#f1e3c8"/>
+    <circle cx="194" cy="208" r="15" fill="#f1e3c8"/>
+    <circle cx="203" cy="199" r="5" fill="#f1e3c8"/>
+    <circle cx="221" cy="208" r="15" fill="#f1e3c8"/>
+    <circle cx="230" cy="199" r="5" fill="#f1e3c8"/>
+    <circle cx="61" cy="224" r="15" fill="#f1e3c8"/>
+    <circle cx="70" cy="215" r="5" fill="#f1e3c8"/>
+    <circle cx="89" cy="224" r="15" fill="#f1e3c8"/>
+    <circle cx="98" cy="215" r="5" fill="#f1e3c8"/>
+    <circle cx="116" cy="224" r="15" fill="#f1e3c8"/>
+    <circle cx="125" cy="215" r="5" fill="#f1e3c8"/>
+    <circle cx="145" cy="224" r="15" fill="#f1e3c8"/>
+    <circle cx="154" cy="215" r="5" fill="#f1e3c8"/>
+    <circle cx="166" cy="224" r="15" fill="#f1e3c8"/>
+    <circle cx="175" cy="215" r="5" fill="#f1e3c8"/>
+    <circle cx="194" cy="224" r="15" fill="#f1e3c8"/>
+    <circle cx="203" cy="215" r="5" fill="#f1e3c8"/>
+    <circle cx="221" cy="224" r="15" fill="#f1e3c8"/>
+    <circle cx="230" cy="215" r="5" fill="#f1e3c8"/>
+    <path d="M52 220h196c0 54-42 86-98 86s-98-32-98-86z" fill="#1a1714"/>
+    <path d="M70 240h160" stroke="#f1e3c8" stroke-width="5" stroke-linecap="round" fill="none" opacity="0.6"/>
+    <circle cx="240" cy="318" r="13" fill="#f1e3c8"/>
+    <circle cx="70" cy="320" r="13" fill="#f1e3c8"/>
+  </g>
+</svg>

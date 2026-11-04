@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 380">
+  <title>pîvaz — onion</title>
+  <defs>
+    <filter id="g" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  7 0 0 0 -1.55" result="speckle"/>
+      <feComposite in="SourceGraphic" in2="speckle" operator="in" result="grainy"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="2" result="warp"/>
+      <feDisplacementMap in="grainy" in2="warp" scale="4" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="p" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="1" seed="11" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  -9 0 0 0 3.2" result="dots"/>
+      <feComposite in="SourceGraphic" in2="dots" operator="in"/>
+    </filter>
+  </defs>
+  <rect width="300" height="380" fill="#8c8519"/>
+  <rect width="300" height="380" fill="#fff6e6" opacity="0.5" filter="url(#p)"/>
+  <g filter="url(#g)">
+    <ellipse cx="150" cy="318" rx="64" ry="12" fill="#1a1714" opacity="0.85"/>
+    <path d="M150 96c-4-20 2-36 14-50" stroke="#f1e3c8" stroke-width="8" stroke-linecap="round" fill="none"/>
+    <path d="M136 306l-6 12M150 308v14M164 306l6 12" stroke="#1a1714" stroke-width="4" stroke-linecap="round" fill="none"/>
+    <path d="M150 96c-10 30-20 40-50 60-36 24-46 70-30 100 18 34 54 50 80 50s62-16 80-50c16-30 6-76-30-100-30-20-40-30-50-60z" fill="#e58bcb"/>
+    <path d="M150 104c-34 50-40 140 0 198M150 104c34 50 40 140 0 198M150 104c-70 60-80 130-20 190M150 104c70 60 80 130 20 190" stroke="#f1e3c8" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.6"/>
+  </g>
+</svg>

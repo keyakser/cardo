@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 380">
+  <title>xaltî — maternal aunt</title>
+  <defs>
+    <filter id="g" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  7 0 0 0 -1.55" result="speckle"/>
+      <feComposite in="SourceGraphic" in2="speckle" operator="in" result="grainy"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="2" result="warp"/>
+      <feDisplacementMap in="grainy" in2="warp" scale="4" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="p" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="1" seed="11" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  -9 0 0 0 3.2" result="dots"/>
+      <feComposite in="SourceGraphic" in2="dots" operator="in"/>
+    </filter>
+  </defs>
+  <rect width="300" height="380" fill="#6a9cc8"/>
+  <rect width="300" height="380" fill="#fff6e6" opacity="0.5" filter="url(#p)"/>
+  <g filter="url(#g)">
+    <ellipse cx="150" cy="325" rx="128" ry="19.2" fill="#1a1714" opacity="0.85"/>
+    <rect x="60.3" y="103.7" width="63.4" height="76.6" rx="29" fill="#1a1714"/>
+    <path d="M29.2 325L45.8 198.8Q45.8 165.5 79.1 165.5H104.9Q138.2 165.5 138.2 198.8L154.8 325Z" fill="#1a1714"/>
+    <circle cx="92" cy="131.4" r="26.4" fill="#f1e3c8"/>
+    <rect x="176.9" y="93.6" width="66.2" height="80" rx="30.4" fill="#1a1714"/>
+    <path d="M144.3 325L161.7 193Q161.7 158.2 196.5 158.2H223.5Q258.3 158.2 258.3 193L275.7 325Z" fill="#8c8519"/>
+    <circle cx="210" cy="122.6" r="27.6" fill="#f1e3c8"/>
+    <path d="M129.8 325V269.9Q129.8 255.4 144.4 255.4H155.6Q170.2 255.4 170.2 269.9V325Z" fill="#f1e3c8"/>
+    <circle cx="150" cy="240.5" r="11.5" fill="#1a1714"/>
+    <path d="M138 239.9A12 12 0 0 1 162 239.9Q150 233.6 138 239.9Z" fill="#1a1714"/>
+  </g>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 380">
+  <title>meş — walking, walk</title>
+  <defs>
+    <filter id="g" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  7 0 0 0 -1.55" result="speckle"/>
+      <feComposite in="SourceGraphic" in2="speckle" operator="in" result="grainy"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="2" result="warp"/>
+      <feDisplacementMap in="grainy" in2="warp" scale="4" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="p" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="1" seed="11" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  -9 0 0 0 3.2" result="dots"/>
+      <feComposite in="SourceGraphic" in2="dots" operator="in"/>
+    </filter>
+  </defs>
+  <rect width="300" height="380" fill="#f04e1f"/>
+  <rect width="300" height="380" fill="#fff6e6" opacity="0.5" filter="url(#p)"/>
+  <g filter="url(#g)">
+    <rect x="0" y="290" width="300" height="90" fill="#f1e3c8"/><ellipse cx="50" cy="340" rx="9" ry="14" fill="#1a1714"/><ellipse cx="82" cy="320" rx="9" ry="14" fill="#1a1714"/><ellipse cx="120" cy="352" rx="9" ry="14" fill="#1a1714"/><ellipse cx="240" cy="330" rx="9" ry="14" fill="#1a1714"/><circle cx="160" cy="76" r="22" fill="#1a1714"/><path d="M138 104h44l6 100h-56z" fill="#6a9cc8"/><path d="M146 204l-26 86M174 204l30 86" stroke="#1a1714" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M140 116l-30 70M180 116l26 66" stroke="#1a1714" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" fill="none"/><line x1="206" y1="182" x2="222" y2="300" stroke="#f1e3c8" stroke-width="7" stroke-linecap="round"/>
+  </g>
+</svg>

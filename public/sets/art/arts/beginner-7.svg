@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 380">
+  <title>fîlm — film</title>
+  <defs>
+    <filter id="g" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  7 0 0 0 -1.55" result="speckle"/>
+      <feComposite in="SourceGraphic" in2="speckle" operator="in" result="grainy"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="2" result="warp"/>
+      <feDisplacementMap in="grainy" in2="warp" scale="4" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="p" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="1" seed="11" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  -9 0 0 0 3.2" result="dots"/>
+      <feComposite in="SourceGraphic" in2="dots" operator="in"/>
+    </filter>
+  </defs>
+  <rect width="300" height="380" fill="#e58bcb"/>
+  <rect width="300" height="380" fill="#fff6e6" opacity="0.5" filter="url(#p)"/>
+  <g filter="url(#g)">
+    <path d="M140 256H290V310H140ZM150 262h10v8h-10zM150 296h10v8h-10zM172 262h10v8h-10zM172 296h10v8h-10zM194 262h10v8h-10zM194 296h10v8h-10zM216 262h10v8h-10zM216 296h10v8h-10zM238 262h10v8h-10zM238 296h10v8h-10zM260 262h10v8h-10zM260 296h10v8h-10zM282 262h10v8h-10zM282 296h10v8h-10z" fill="#8c8519" fill-rule="evenodd" transform="rotate(-8 215 283)"/>
+    <g transform="rotate(-8 215 283)"><rect x="160" y="274" width="40" height="24" rx="2" fill="#6a9cc8"/><rect x="210" y="274" width="40" height="24" rx="2" fill="#6a9cc8"/><rect x="260" y="274" width="26" height="24" rx="2" fill="#6a9cc8"/></g>
+    <circle cx="130" cy="164" r="86" fill="#1a1714"/>
+    <path d="M112 116a18 18 0 1 0 36 0a18 18 0 1 0 -36 0M157.7 149.2a18 18 0 1 0 36 0a18 18 0 1 0 -36 0M140.2 202.8a18 18 0 1 0 36 0a18 18 0 1 0 -36 0M83.8 202.8a18 18 0 1 0 36 0a18 18 0 1 0 -36 0M66.3 149.2a18 18 0 1 0 36 0a18 18 0 1 0 -36 0M120 164a10 10 0 1 0 20 0a10 10 0 1 0 -20 0" fill="#f1e3c8"/>
+  </g>
+</svg>

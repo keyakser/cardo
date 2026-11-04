@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 380">
+  <title>bastêq — grape fruit leather</title>
+  <defs>
+    <filter id="g" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  7 0 0 0 -1.55" result="speckle"/>
+      <feComposite in="SourceGraphic" in2="speckle" operator="in" result="grainy"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="2" result="warp"/>
+      <feDisplacementMap in="grainy" in2="warp" scale="4" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="p" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="1" seed="11" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  -9 0 0 0 3.2" result="dots"/>
+      <feComposite in="SourceGraphic" in2="dots" operator="in"/>
+    </filter>
+  </defs>
+  <rect width="300" height="380" fill="#6a9cc8"/>
+  <rect width="300" height="380" fill="#fff6e6" opacity="0.5" filter="url(#p)"/>
+  <g filter="url(#g)">
+    <ellipse cx="150" cy="304" rx="108" ry="12" fill="#1a1714" opacity="0.85"/>
+    <polygon points="54,252 200,244 250,290 100,300" fill="#f04e1f"/>
+    <polygon points="54,252 200,244 250,290 100,300" fill="#1a1714" opacity="0.4"/>
+    <polygon points="60,236 204,228 246,270 102,280" fill="#f04e1f"/>
+    <path d="M80 250l130-6M92 264l130-6" stroke="#e58bcb" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.7"/>
+    <rect x="92" y="172" width="150" height="66" rx="16" fill="#f04e1f"/>
+    <rect x="92" y="172" width="150" height="66" rx="16" fill="#1a1714" opacity="0.25"/>
+    <ellipse cx="92" cy="205" rx="22" ry="33" fill="#f04e1f"/>
+    <path d="M92 205m-6 0a6 6 0 1 1 12 0a12 14 0 1 1-24 0a18 22 0 1 1 36 0" stroke="#1a1714" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M120 186h96" stroke="#f1e3c8" stroke-width="5" stroke-linecap="round" fill="none" opacity="0.5"/>
+  </g>
+</svg>

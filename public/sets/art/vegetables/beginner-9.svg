@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 380">
+  <title>bacanê reş — eggplant</title>
+  <defs>
+    <filter id="g" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  7 0 0 0 -1.55" result="speckle"/>
+      <feComposite in="SourceGraphic" in2="speckle" operator="in" result="grainy"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="2" result="warp"/>
+      <feDisplacementMap in="grainy" in2="warp" scale="4" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="p" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="1" seed="11" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  -9 0 0 0 3.2" result="dots"/>
+      <feComposite in="SourceGraphic" in2="dots" operator="in"/>
+    </filter>
+  </defs>
+  <rect width="300" height="380" fill="#6a9cc8"/>
+  <rect width="300" height="380" fill="#fff6e6" opacity="0.5" filter="url(#p)"/>
+  <g filter="url(#g)">
+    <ellipse cx="150" cy="312" rx="70" ry="12" fill="#1a1714" opacity="0.85"/>
+    <ellipse cx="156" cy="220" rx="58" ry="94" fill="#1a1714" transform="rotate(-18 156 220)"/>
+    <polygon points="117,98.3 133.3,122.5 159.9,110.6 142,133.6 161.5,155.2 134.1,145.3 119.5,170.5 120.5,141.4 92,135.3 120.1,127.3" fill="#8c8519"/>
+    <rect x="120" y="88" width="12" height="34" rx="5" fill="#8c8519" transform="rotate(-20 126 105)"/>
+    <path d="M126 186c-12 30-10 70 6 96" stroke="#e58bcb" stroke-width="8" stroke-linecap="round" fill="none" opacity="0.8"/>
+  </g>
+</svg>

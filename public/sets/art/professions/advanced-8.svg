@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 380">
+  <title>zimanzan — linguist</title>
+  <defs>
+    <filter id="g" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  7 0 0 0 -1.55" result="speckle"/>
+      <feComposite in="SourceGraphic" in2="speckle" operator="in" result="grainy"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="2" result="warp"/>
+      <feDisplacementMap in="grainy" in2="warp" scale="4" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="p" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="1" seed="11" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  -9 0 0 0 3.2" result="dots"/>
+      <feComposite in="SourceGraphic" in2="dots" operator="in"/>
+    </filter>
+  </defs>
+  <rect width="300" height="380" fill="#8c8519"/>
+  <rect width="300" height="380" fill="#fff6e6" opacity="0.5" filter="url(#p)"/>
+  <g filter="url(#g)">
+    <ellipse cx="140" cy="325" rx="100" ry="15" fill="#1a1714" opacity="0.85"/>
+    <path d="M56 325V210.2Q56 180 86.2 180H109.8Q140 180 140 210.2V325Z" fill="#f04e1f"/>
+    <circle cx="98" cy="149" r="24" fill="#f1e3c8"/>
+    <path d="M73 147.8A25 25 0 0 1 123 147.8Q98 134.6 73 147.8Z" fill="#1a1714"/>
+    <path d="M150 60h116a16 16 0 0 1 16 16v100a16 16 0 0 1-16 16h-64l-40 30 8-30h-20a16 16 0 0 1-16-16V76a16 16 0 0 1 16-16z" fill="#f1e3c8"/>
+    <path d="M168 94q14-18 26 0t26 0M232 84v36h24" stroke="#1a1714" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <path d="M168 146h30M210 132q20 4 4 20t28 0" stroke="#e58bcb" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+</svg>

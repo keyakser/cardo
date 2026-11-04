@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 380">
+  <title>çîrok vegotin — storytelling</title>
+  <defs>
+    <filter id="g" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  7 0 0 0 -1.55" result="speckle"/>
+      <feComposite in="SourceGraphic" in2="speckle" operator="in" result="grainy"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="2" result="warp"/>
+      <feDisplacementMap in="grainy" in2="warp" scale="4" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="p" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="1" seed="11" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  -9 0 0 0 3.2" result="dots"/>
+      <feComposite in="SourceGraphic" in2="dots" operator="in"/>
+    </filter>
+  </defs>
+  <rect width="300" height="380" fill="#f1e3c8"/>
+  <rect width="300" height="380" fill="#fff6e6" opacity="0.5" filter="url(#p)"/>
+  <g filter="url(#g)">
+    <ellipse cx="150" cy="318" rx="100" ry="12" fill="#1a1714" opacity="0.85"/><path d="M58 306V199Q58 172 98 172Q138 172 138 199V306z" fill="#8c8519"/><circle cx="98" cy="140" r="21" fill="#1a1714"/><line x1="52" y1="210" x2="40" y2="306" stroke="#1a1714" stroke-width="7" stroke-linecap="round"/><path d="M150 64h112a16 16 0 0 1 16 16v80a16 16 0 0 1-16 16h-56l-30 30v-30h-26a16 16 0 0 1-16-16V80a16 16 0 0 1 16-16z" fill="#6a9cc8"/><path d="M196 96a28 28 0 1 0 22 44 22 22 0 1 1-22-44z" fill="#f1e3c8"/><polygon points="236,92 242,106 256,108 246,118 248,132 236,124 224,132 226,118 216,108 230,106" fill="#f04e1f"/>
+  </g>
+</svg>

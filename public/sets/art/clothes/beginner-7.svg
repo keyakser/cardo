@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 380">
+  <title>fistan — dress</title>
+  <defs>
+    <filter id="g" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  7 0 0 0 -1.55" result="speckle"/>
+      <feComposite in="SourceGraphic" in2="speckle" operator="in" result="grainy"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="2" result="warp"/>
+      <feDisplacementMap in="grainy" in2="warp" scale="4" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="p" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="1" seed="11" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  -9 0 0 0 3.2" result="dots"/>
+      <feComposite in="SourceGraphic" in2="dots" operator="in"/>
+    </filter>
+  </defs>
+  <rect width="300" height="380" fill="#e58bcb"/>
+  <rect width="300" height="380" fill="#fff6e6" opacity="0.5" filter="url(#p)"/>
+  <g filter="url(#g)">
+    <ellipse cx="150" cy="300" rx="110" ry="12" fill="#1a1714" opacity="0.85"/><path d="M124 60h52l6 40c30 10 34 40 22 70l56 120H40l56-120c-12-30-8-60 22-70z" fill="#8c8519"/><path d="M134 60c4 26 28 26 32 0z" fill="#e58bcb"/><rect x="96" y="162" width="108" height="14" fill="#1a1714"/><circle cx="110" cy="226" r="8" fill="#6a9cc8"/><circle cx="150" cy="206" r="8" fill="#6a9cc8"/><circle cx="190" cy="226" r="8" fill="#6a9cc8"/><circle cx="126" cy="264" r="8" fill="#6a9cc8"/><circle cx="174" cy="264" r="8" fill="#6a9cc8"/><circle cx="150" cy="240" r="8" fill="#6a9cc8"/><circle cx="84" cy="268" r="8" fill="#6a9cc8"/><circle cx="216" cy="268" r="8" fill="#6a9cc8"/>
+  </g>
+</svg>

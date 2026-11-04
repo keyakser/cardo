@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 380">
+  <title>xalîçe — carpet, rug</title>
+  <defs>
+    <filter id="g" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  7 0 0 0 -1.55" result="speckle"/>
+      <feComposite in="SourceGraphic" in2="speckle" operator="in" result="grainy"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="2" result="warp"/>
+      <feDisplacementMap in="grainy" in2="warp" scale="4" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="p" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="1" seed="11" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  -9 0 0 0 3.2" result="dots"/>
+      <feComposite in="SourceGraphic" in2="dots" operator="in"/>
+    </filter>
+  </defs>
+  <rect width="300" height="380" fill="#8c8519"/>
+  <rect width="300" height="380" fill="#fff6e6" opacity="0.5" filter="url(#p)"/>
+  <g filter="url(#g)">
+    <g transform="rotate(-8 150 190)"><rect x="70" y="70" width="160" height="240" rx="4" fill="#f04e1f"/><rect x="88" y="88" width="124" height="204" fill="none" stroke="#f1e3c8" stroke-width="8"/><polygon points="150,118 198,190 150,262 102,190" fill="#e58bcb"/><polygon points="150,160 170,190 150,220 130,190" fill="#f1e3c8"/><path d="M78 70v-14M90 70v-14M102 70v-14M114 70v-14M126 70v-14M138 70v-14M150 70v-14M162 70v-14M174 70v-14M186 70v-14M198 70v-14M210 70v-14M222 70v-14M78 310v14M90 310v14M102 310v14M114 310v14M126 310v14M138 310v14M150 310v14M162 310v14M174 310v14M186 310v14M198 310v14M210 310v14M222 310v14" stroke="#1a1714" stroke-width="4" stroke-linecap="round" fill="none"/></g>
+  </g>
+</svg>

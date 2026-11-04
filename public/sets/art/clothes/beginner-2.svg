@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 380">
+  <title>kiras — shirt</title>
+  <defs>
+    <filter id="g" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  7 0 0 0 -1.55" result="speckle"/>
+      <feComposite in="SourceGraphic" in2="speckle" operator="in" result="grainy"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="2" result="warp"/>
+      <feDisplacementMap in="grainy" in2="warp" scale="4" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="p" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="1" seed="11" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  -9 0 0 0 3.2" result="dots"/>
+      <feComposite in="SourceGraphic" in2="dots" operator="in"/>
+    </filter>
+  </defs>
+  <rect width="300" height="380" fill="#e58bcb"/>
+  <rect width="300" height="380" fill="#fff6e6" opacity="0.5" filter="url(#p)"/>
+  <g filter="url(#g)">
+    <path d="M130 70l-40 14-18 36 26 8v86h104v-86l26-8-18-36-40-14c-4 14-36 14-40 0z" fill="#8c8519"/><path d="M130 70l20 40-30-10-6-24zM170 70l-20 40 30-10 6-24z" fill="#6a9cc8"/><path d="M150 112v100" stroke="#1a1714" stroke-width="4" stroke-linecap="round" fill="none"/><circle cx="150" cy="138" r="5" fill="#1a1714"/><circle cx="150" cy="170" r="5" fill="#1a1714"/><circle cx="150" cy="202" r="5" fill="#1a1714"/><rect x="168" y="130" width="26" height="28" rx="3" fill="#f1e3c8"/><rect x="70" y="112" width="20" height="10" fill="#f1e3c8" transform="rotate(14 80 117)"/><rect x="210" y="112" width="20" height="10" fill="#f1e3c8" transform="rotate(-14 220 117)"/>
+  </g>
+</svg>

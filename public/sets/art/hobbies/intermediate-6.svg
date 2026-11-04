@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 380">
+  <title>bisîklet ajotin — cycling</title>
+  <defs>
+    <filter id="g" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  7 0 0 0 -1.55" result="speckle"/>
+      <feComposite in="SourceGraphic" in2="speckle" operator="in" result="grainy"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="2" result="warp"/>
+      <feDisplacementMap in="grainy" in2="warp" scale="4" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="p" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="1" seed="11" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  -9 0 0 0 3.2" result="dots"/>
+      <feComposite in="SourceGraphic" in2="dots" operator="in"/>
+    </filter>
+  </defs>
+  <rect width="300" height="380" fill="#6a9cc8"/>
+  <rect width="300" height="380" fill="#fff6e6" opacity="0.5" filter="url(#p)"/>
+  <g filter="url(#g)">
+    <circle cx="80" cy="250" r="48" fill="none" stroke="#1a1714" stroke-width="12"/><circle cx="220" cy="250" r="48" fill="none" stroke="#1a1714" stroke-width="12"/><path d="M80 250l46-80h80l14 80M126 170l24 80h70M150 250l56-80" stroke="#f04e1f" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M110 150h36M200 170l-6-28h26" stroke="#1a1714" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none"/><circle cx="150" cy="250" r="10" fill="#1a1714"/><circle cx="80" cy="250" r="7" fill="#f1e3c8"/><circle cx="220" cy="250" r="7" fill="#f1e3c8"/>
+  </g>
+</svg>

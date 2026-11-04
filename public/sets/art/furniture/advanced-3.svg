@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 380">
+  <title>bêjing — sieve</title>
+  <defs>
+    <filter id="g" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  7 0 0 0 -1.55" result="speckle"/>
+      <feComposite in="SourceGraphic" in2="speckle" operator="in" result="grainy"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="2" result="warp"/>
+      <feDisplacementMap in="grainy" in2="warp" scale="4" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="p" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="1" seed="11" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  -9 0 0 0 3.2" result="dots"/>
+      <feComposite in="SourceGraphic" in2="dots" operator="in"/>
+    </filter>
+  </defs>
+  <rect width="300" height="380" fill="#8c8519"/>
+  <rect width="300" height="380" fill="#fff6e6" opacity="0.5" filter="url(#p)"/>
+  <g filter="url(#g)">
+    <ellipse cx="150" cy="304" rx="100" ry="12" fill="#1a1714" opacity="0.85"/><path d="M40 170v34a110 44 0 0 0 220 0v-34z" fill="#f04e1f"/><ellipse cx="150" cy="170" rx="110" ry="44" fill="#f04e1f"/><ellipse cx="150" cy="170" rx="94" ry="34" fill="#f1e3c8"/><path d="M64 166h0M64 178h0M78 154h0M78 166h0M78 178h0M92 154h0M92 166h0M92 178h0M92 190h0M106 154h0M106 166h0M106 178h0M106 190h0M120 142h0M120 154h0M120 166h0M120 178h0M120 190h0M134 142h0M134 154h0M134 166h0M134 178h0M134 190h0M148 142h0M148 154h0M148 166h0M148 178h0M148 190h0M162 142h0M162 154h0M162 166h0M162 178h0M162 190h0M176 142h0M176 154h0M176 166h0M176 178h0M176 190h0M190 154h0M190 166h0M190 178h0M190 190h0M204 154h0M204 166h0M204 178h0M204 190h0M218 154h0M218 166h0M218 178h0M232 166h0M232 178h0" stroke="#1a1714" stroke-width="5" stroke-linecap="round"/><ellipse cx="150" cy="170" rx="110" ry="44" fill="none" stroke="#1a1714" stroke-width="4"/><path d="M120 240h0M150 252h0M180 238h0M136 272h0M166 280h0M150 226h0" stroke="#f1e3c8" stroke-width="7" stroke-linecap="round"/>
+  </g>
+</svg>

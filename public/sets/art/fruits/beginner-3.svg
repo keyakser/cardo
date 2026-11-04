@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 380">
+  <title>tirî — grape</title>
+  <defs>
+    <filter id="g" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  7 0 0 0 -1.55" result="speckle"/>
+      <feComposite in="SourceGraphic" in2="speckle" operator="in" result="grainy"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="2" result="warp"/>
+      <feDisplacementMap in="grainy" in2="warp" scale="4" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="p" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="1" seed="11" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  -9 0 0 0 3.2" result="dots"/>
+      <feComposite in="SourceGraphic" in2="dots" operator="in"/>
+    </filter>
+  </defs>
+  <rect width="300" height="380" fill="#8c8519"/>
+  <rect width="300" height="380" fill="#fff6e6" opacity="0.5" filter="url(#p)"/>
+  <g filter="url(#g)">
+    <ellipse cx="150" cy="292" rx="64" ry="12" fill="#1a1714" opacity="0.85"/>
+    <line x1="150" y1="122" x2="158" y2="76" stroke="#1a1714" stroke-width="8" stroke-linecap="round"/>
+    <path d="M0 0c22.2 -22.2 51.8 -22.2 74 0c-22.2 22.2 -51.8 22.2 -74 0z" fill="#f04e1f" transform="translate(158 96) rotate(-25)"/>
+    <path d="M0 0c16.2 -16.2 37.8 -16.2 54 0c-16.2 16.2 -37.8 16.2 -54 0z" fill="#8c8519" transform="translate(150 104) rotate(-160)"/>
+    <circle cx="84" cy="140" r="23" fill="#e58bcb"/>
+    <circle cx="76" cy="132" r="5" fill="#f1e3c8"/>
+    <circle cx="128" cy="140" r="23" fill="#e58bcb"/>
+    <circle cx="120" cy="132" r="5" fill="#f1e3c8"/>
+    <circle cx="172" cy="140" r="23" fill="#e58bcb"/>
+    <circle cx="164" cy="132" r="5" fill="#f1e3c8"/>
+    <circle cx="216" cy="140" r="23" fill="#e58bcb"/>
+    <circle cx="208" cy="132" r="5" fill="#f1e3c8"/>
+    <circle cx="106" cy="178" r="23" fill="#e58bcb"/>
+    <circle cx="98" cy="170" r="5" fill="#f1e3c8"/>
+    <circle cx="150" cy="178" r="23" fill="#e58bcb"/>
+    <circle cx="142" cy="170" r="5" fill="#f1e3c8"/>
+    <circle cx="194" cy="178" r="23" fill="#e58bcb"/>
+    <circle cx="186" cy="170" r="5" fill="#f1e3c8"/>
+    <circle cx="128" cy="216" r="23" fill="#e58bcb"/>
+    <circle cx="120" cy="208" r="5" fill="#f1e3c8"/>
+    <circle cx="172" cy="216" r="23" fill="#e58bcb"/>
+    <circle cx="164" cy="208" r="5" fill="#f1e3c8"/>
+    <circle cx="150" cy="254" r="23" fill="#e58bcb"/>
+    <circle cx="142" cy="246" r="5" fill="#f1e3c8"/>
+  </g>
+</svg>

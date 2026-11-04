@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 380">
+  <title>têkçûn — defeat</title>
+  <defs>
+    <filter id="g" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  7 0 0 0 -1.55" result="speckle"/>
+      <feComposite in="SourceGraphic" in2="speckle" operator="in" result="grainy"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="2" result="warp"/>
+      <feDisplacementMap in="grainy" in2="warp" scale="4" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="p" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="1" seed="11" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  -9 0 0 0 3.2" result="dots"/>
+      <feComposite in="SourceGraphic" in2="dots" operator="in"/>
+    </filter>
+  </defs>
+  <rect width="300" height="380" fill="#f1e3c8"/>
+  <rect width="300" height="380" fill="#fff6e6" opacity="0.5" filter="url(#p)"/>
+  <g filter="url(#g)">
+    <path d="M110 70a24 24 0 0 1 40-14a20 20 0 0 1 34 10a16 16 0 0 1-2 30H112a18 18 0 0 1-2-26Z" fill="#1a1714"/>
+    <path d="M124 110L118 128M150 110L144 128M176 110L170 128" stroke="#6a9cc8" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <rect x="40" y="250" width="220" height="14" rx="4" fill="#1a1714"/>
+    <line x1="60" y1="260" x2="60" y2="320" stroke="#1a1714" stroke-width="8" stroke-linecap="round"/>
+    <line x1="240" y1="260" x2="240" y2="320" stroke="#1a1714" stroke-width="8" stroke-linecap="round"/>
+    <path d="M118 252C108 206 126 172 162 170C190 172 196 206 186 252Z" fill="#6a9cc8"/>
+    <path d="M134 256L128 322M176 256L182 322" stroke="#1a1714" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <circle cx="176" cy="188" r="22" fill="#1a1714"/>
+    <path d="M130 200L176 210" stroke="#6a9cc8" stroke-width="13" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 380">
+  <title>siwarî — horse riding</title>
+  <defs>
+    <filter id="g" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  7 0 0 0 -1.55" result="speckle"/>
+      <feComposite in="SourceGraphic" in2="speckle" operator="in" result="grainy"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="2" result="warp"/>
+      <feDisplacementMap in="grainy" in2="warp" scale="4" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="p" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="1" seed="11" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  -9 0 0 0 3.2" result="dots"/>
+      <feComposite in="SourceGraphic" in2="dots" operator="in"/>
+    </filter>
+  </defs>
+  <rect width="300" height="380" fill="#6a9cc8"/>
+  <rect width="300" height="380" fill="#fff6e6" opacity="0.5" filter="url(#p)"/>
+  <g filter="url(#g)">
+    <ellipse cx="150" cy="312" rx="110" ry="12" fill="#1a1714" opacity="0.85"/>
+    <path d="M98 234L94 304M120 238L124 304M186 238L180 304M206 232L216 304" stroke="#1a1714" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <path d="M80 204C58 220 54 250 60 270" stroke="#1a1714" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <ellipse cx="150" cy="212" rx="76" ry="36" fill="#1a1714"/>
+    <polygon points="196,196 214,140 238,140 226,206" fill="#1a1714"/>
+    <ellipse cx="244" cy="146" rx="28" ry="14" fill="#1a1714" transform="rotate(30 244 146)"/>
+    <polygon points="222,128 226,112 234,130" fill="#1a1714"/>
+    <rect x="130" y="170" width="44" height="14" rx="4" fill="#f1e3c8"/>
+    <path d="M146 186L166 236" stroke="#f04e1f" stroke-width="13" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <rect x="132" y="114" width="32" height="66" rx="14" fill="#f04e1f" transform="rotate(-8 148 147)"/>
+    <circle cx="152" cy="98" r="17" fill="#1a1714"/>
+  </g>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 380">
+  <title>hevrîşim — silk</title>
+  <defs>
+    <filter id="g" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  7 0 0 0 -1.55" result="speckle"/>
+      <feComposite in="SourceGraphic" in2="speckle" operator="in" result="grainy"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="2" result="warp"/>
+      <feDisplacementMap in="grainy" in2="warp" scale="4" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="p" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="1" seed="11" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  -9 0 0 0 3.2" result="dots"/>
+      <feComposite in="SourceGraphic" in2="dots" operator="in"/>
+    </filter>
+  </defs>
+  <rect width="300" height="380" fill="#f1e3c8"/>
+  <rect width="300" height="380" fill="#fff6e6" opacity="0.5" filter="url(#p)"/>
+  <g filter="url(#g)">
+    <path d="M40 110c60-60 120 40 220-20v64c-100 60-160-40-220 20z" fill="#f04e1f"/><path d="M40 200c60-60 120 40 220-20v58c-100 60-160-40-220 20z" fill="#6a9cc8"/><path d="M60 134c40-30 80 10 120 6M120 230c40 8 70-6 110-20" stroke="#8c8519" stroke-width="5" stroke-linecap="round" fill="none"/><path d="M150 296c50 0 80-20 90-52" stroke="#1a1714" stroke-width="3" stroke-linecap="round" fill="none"/><ellipse cx="150" cy="318" rx="64" ry="12" fill="#1a1714" opacity="0.85"/><ellipse cx="110" cy="294" rx="54" ry="28" fill="#8c8519"/><path d="M66 290c28 8 60 8 88 0M72 304c24 6 52 6 76 0M76 280c24-6 44-6 68 0" stroke="#f1e3c8" stroke-width="3" stroke-linecap="round" fill="none"/>
+  </g>
+</svg>

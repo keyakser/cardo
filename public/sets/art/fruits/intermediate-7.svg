@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 380">
+  <title>gûz — walnut</title>
+  <defs>
+    <filter id="g" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  7 0 0 0 -1.55" result="speckle"/>
+      <feComposite in="SourceGraphic" in2="speckle" operator="in" result="grainy"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="2" result="warp"/>
+      <feDisplacementMap in="grainy" in2="warp" scale="4" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="p" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="1" seed="11" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  -9 0 0 0 3.2" result="dots"/>
+      <feComposite in="SourceGraphic" in2="dots" operator="in"/>
+    </filter>
+  </defs>
+  <rect width="300" height="380" fill="#e58bcb"/>
+  <rect width="300" height="380" fill="#fff6e6" opacity="0.5" filter="url(#p)"/>
+  <g filter="url(#g)">
+    <ellipse cx="150" cy="296" rx="108" ry="12" fill="#1a1714" opacity="0.85"/>
+    <ellipse cx="112" cy="206" rx="60" ry="74" fill="#8c8519"/>
+    <line x1="112" y1="134" x2="112" y2="278" stroke="#1a1714" stroke-width="5" stroke-linecap="round"/>
+    <path d="M80 180c10 8 10 20 0 28" stroke="#1a1714" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.5"/>
+    <path d="M90 236c12 6 10 20-2 26" stroke="#1a1714" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.5"/>
+    <path d="M140 170c-10 10-8 22 2 28" stroke="#1a1714" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.5"/>
+    <path d="M138 230c-10 8-8 20 4 26" stroke="#1a1714" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.5"/>
+    <ellipse cx="200" cy="230" rx="56" ry="64" fill="#8c8519"/>
+    <ellipse cx="200" cy="230" rx="46" ry="54" fill="#1a1714"/>
+    <ellipse cx="186" cy="232" rx="16" ry="40" fill="#f1e3c8"/>
+    <ellipse cx="214" cy="232" rx="16" ry="40" fill="#f1e3c8"/>
+    <path d="M186 206v52M214 206v52" stroke="#1a1714" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.5"/>
+  </g>
+</svg>

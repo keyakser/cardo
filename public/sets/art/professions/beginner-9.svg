@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 380">
+  <title>nivîskar — writer</title>
+  <defs>
+    <filter id="g" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  7 0 0 0 -1.55" result="speckle"/>
+      <feComposite in="SourceGraphic" in2="speckle" operator="in" result="grainy"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="2" result="warp"/>
+      <feDisplacementMap in="grainy" in2="warp" scale="4" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="p" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="1" seed="11" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  -9 0 0 0 3.2" result="dots"/>
+      <feComposite in="SourceGraphic" in2="dots" operator="in"/>
+    </filter>
+  </defs>
+  <rect width="300" height="380" fill="#f04e1f"/>
+  <rect width="300" height="380" fill="#fff6e6" opacity="0.5" filter="url(#p)"/>
+  <g filter="url(#g)">
+    <ellipse cx="150" cy="322" rx="110" ry="16.5" fill="#1a1714" opacity="0.85"/>
+    <path d="M63 320V205.2Q63 175 93.2 175H116.8Q147 175 147 205.2V320Z" fill="#e58bcb"/>
+    <line x1="135.2" y1="190.1" x2="196" y2="220" stroke="#e58bcb" stroke-width="20.2" stroke-linecap="round"/>
+    <circle cx="105" cy="144" r="24" fill="#f1e3c8"/>
+    <path d="M80 142.8A25 25 0 0 1 130 142.8Q105 129.6 80 142.8Z" fill="#1a1714"/>
+    <rect x="168" y="150" width="100" height="128" rx="6" fill="#f1e3c8"/>
+    <line x1="184" y1="180" x2="250" y2="180" stroke="#1a1714" stroke-width="5" stroke-linecap="round"/>
+    <line x1="184" y1="204" x2="250" y2="204" stroke="#1a1714" stroke-width="5" stroke-linecap="round"/>
+    <line x1="184" y1="228" x2="230" y2="228" stroke="#1a1714" stroke-width="5" stroke-linecap="round"/>
+    <line x1="184" y1="252" x2="240" y2="252" stroke="#1a1714" stroke-width="5" stroke-linecap="round"/>
+    <line x1="240" y1="200" x2="196" y2="240" stroke="#6a9cc8" stroke-width="9" stroke-linecap="round"/>
+  </g>
+</svg>

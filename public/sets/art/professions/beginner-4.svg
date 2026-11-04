@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 380">
+  <title>cotkar — farmer</title>
+  <defs>
+    <filter id="g" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  7 0 0 0 -1.55" result="speckle"/>
+      <feComposite in="SourceGraphic" in2="speckle" operator="in" result="grainy"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="2" result="warp"/>
+      <feDisplacementMap in="grainy" in2="warp" scale="4" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="p" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="1" seed="11" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  -9 0 0 0 3.2" result="dots"/>
+      <feComposite in="SourceGraphic" in2="dots" operator="in"/>
+    </filter>
+  </defs>
+  <rect width="300" height="380" fill="#f04e1f"/>
+  <rect width="300" height="380" fill="#fff6e6" opacity="0.5" filter="url(#p)"/>
+  <g filter="url(#g)">
+    <ellipse cx="150" cy="325" rx="80" ry="12" fill="#1a1714" opacity="0.85"/>
+    <path d="M93.8 325V198.8Q93.8 165.5 127.1 165.5H152.9Q186.2 165.5 186.2 198.8V325Z" fill="#8c8519"/>
+    <line x1="173.3" y1="182.1" x2="212" y2="200" stroke="#8c8519" stroke-width="22.2" stroke-linecap="round"/>
+    <circle cx="140" cy="131.4" r="26.4" fill="#f1e3c8"/>
+    <path d="M140 78c-26 0-34 20-34 32h68c0-12-8-32-34-32z" fill="#f1e3c8"/>
+    <rect x="84" y="106" width="112" height="12" rx="6" fill="#f1e3c8"/>
+    <line x1="222" y1="76" x2="206" y2="320" stroke="#1a1714" stroke-width="7" stroke-linecap="round"/>
+    <path d="M204 70l6 -34M222 72v-38M240 76l-6 -34" stroke="#1a1714" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <line x1="204" y1="72" x2="240" y2="78" stroke="#1a1714" stroke-width="6" stroke-linecap="round"/>
+  </g>
+</svg>

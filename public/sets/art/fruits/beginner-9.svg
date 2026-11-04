@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 380">
+  <title>petêx — melon</title>
+  <defs>
+    <filter id="g" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  7 0 0 0 -1.55" result="speckle"/>
+      <feComposite in="SourceGraphic" in2="speckle" operator="in" result="grainy"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="2" result="warp"/>
+      <feDisplacementMap in="grainy" in2="warp" scale="4" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="p" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="1" seed="11" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  -9 0 0 0 3.2" result="dots"/>
+      <feComposite in="SourceGraphic" in2="dots" operator="in"/>
+    </filter>
+  </defs>
+  <rect width="300" height="380" fill="#e58bcb"/>
+  <rect width="300" height="380" fill="#fff6e6" opacity="0.5" filter="url(#p)"/>
+  <g filter="url(#g)">
+    <ellipse cx="150" cy="300" rx="106" ry="12" fill="#1a1714" opacity="0.85"/>
+    <ellipse cx="150" cy="186" rx="102" ry="80" fill="#8c8519"/>
+    <path d="M100 116c-18 40-18 100 0 140" stroke="#f1e3c8" stroke-width="6" stroke-linecap="round" fill="none" opacity="0.7"/>
+    <path d="M150 108v156" stroke="#f1e3c8" stroke-width="6" stroke-linecap="round" fill="none" opacity="0.7"/>
+    <path d="M200 116c18 40 18 100 0 140" stroke="#f1e3c8" stroke-width="6" stroke-linecap="round" fill="none" opacity="0.7"/>
+    <path d="M62 280c40-50 136-50 176 0-40 22-136 22-176 0z" fill="#f1e3c8"/>
+    <path d="M70 276c40-42 120-42 160 0-40 14-120 14-160 0z" fill="#f04e1f"/>
+    <line x1="120" y1="258" x2="180" y2="258" stroke="#1a1714" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+    <rect x="145" y="94" width="10" height="16" rx="4" fill="#1a1714" transform="rotate(6 150 102.0)"/>
+  </g>
+</svg>

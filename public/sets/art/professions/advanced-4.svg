@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 380">
+  <title>derhêner — director (film)</title>
+  <defs>
+    <filter id="g" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  7 0 0 0 -1.55" result="speckle"/>
+      <feComposite in="SourceGraphic" in2="speckle" operator="in" result="grainy"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="2" result="warp"/>
+      <feDisplacementMap in="grainy" in2="warp" scale="4" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="p" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="1" seed="11" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  -9 0 0 0 3.2" result="dots"/>
+      <feComposite in="SourceGraphic" in2="dots" operator="in"/>
+    </filter>
+  </defs>
+  <rect width="300" height="380" fill="#f04e1f"/>
+  <rect width="300" height="380" fill="#fff6e6" opacity="0.5" filter="url(#p)"/>
+  <g filter="url(#g)">
+    <ellipse cx="150" cy="325" rx="110" ry="16.5" fill="#1a1714" opacity="0.85"/>
+    <path d="M56 325V210.2Q56 180 86.2 180H109.8Q140 180 140 210.2V325Z" fill="#e58bcb"/>
+    <line x1="128.2" y1="195.1" x2="170" y2="190" stroke="#e58bcb" stroke-width="20.2" stroke-linecap="round"/>
+    <circle cx="98" cy="149" r="24" fill="#f1e3c8"/>
+    <path d="M68 128c-6-26 50-30 60-8-10 6-40 10-60 8z" fill="#1a1714"/>
+    <rect x="158" y="152" width="118" height="80" rx="6" fill="#1a1714"/>
+    <path d="M156 112l114-24 6 30-114 24z" fill="#1a1714"/>
+    <path d="M180 107l22-5-8 28-22 5zm44-9l22-5-8 28-22 5z" fill="#f1e3c8"/>
+    <path d="M178 172h80M178 196h80" stroke="#f1e3c8" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+</svg>

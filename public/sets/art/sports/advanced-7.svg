@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 380">
+  <title>xelat — prize</title>
+  <defs>
+    <filter id="g" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  7 0 0 0 -1.55" result="speckle"/>
+      <feComposite in="SourceGraphic" in2="speckle" operator="in" result="grainy"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="2" result="warp"/>
+      <feDisplacementMap in="grainy" in2="warp" scale="4" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="p" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="1" seed="11" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  -9 0 0 0 3.2" result="dots"/>
+      <feComposite in="SourceGraphic" in2="dots" operator="in"/>
+    </filter>
+  </defs>
+  <rect width="300" height="380" fill="#f1e3c8"/>
+  <rect width="300" height="380" fill="#fff6e6" opacity="0.5" filter="url(#p)"/>
+  <g filter="url(#g)">
+    <ellipse cx="150" cy="300" rx="72" ry="12" fill="#1a1714" opacity="0.85"/>
+    <rect x="95" y="262" width="110" height="30" rx="4" fill="#1a1714"/>
+    <rect x="112" y="240" width="76" height="24" rx="3" fill="#1a1714"/>
+    <rect x="140" y="200" width="20" height="42" fill="#f04e1f"/>
+    <path d="M100 106C56 104 62 168 112 166M200 106C244 104 238 168 188 166" stroke="#f04e1f" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <path d="M92 86H208C208 168 182 198 150 204C118 198 92 168 92 86Z" fill="#f04e1f"/>
+    <polygon points="150,112 157.1,130.3 176.6,131.3 161.4,143.7 166.5,162.7 150,152 133.5,162.7 138.6,143.7 123.4,131.3 142.9,130.3" fill="#e58bcb"/>
+    <path d="M112 104C112 136 120 160 134 176" stroke="#f1e3c8" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+</svg>

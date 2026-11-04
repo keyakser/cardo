@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 380">
+  <title>textê reş — blackboard</title>
+  <defs>
+    <filter id="g" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  7 0 0 0 -1.55" result="speckle"/>
+      <feComposite in="SourceGraphic" in2="speckle" operator="in" result="grainy"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="2" result="warp"/>
+      <feDisplacementMap in="grainy" in2="warp" scale="4" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="p" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="1" seed="11" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  -9 0 0 0 3.2" result="dots"/>
+      <feComposite in="SourceGraphic" in2="dots" operator="in"/>
+    </filter>
+  </defs>
+  <rect width="300" height="380" fill="#6a9cc8"/>
+  <rect width="300" height="380" fill="#fff6e6" opacity="0.5" filter="url(#p)"/>
+  <g filter="url(#g)">
+    <ellipse cx="150" cy="312" rx="100" ry="12" fill="#1a1714" opacity="0.85"/><rect x="36" y="80" width="228" height="166" rx="8" fill="#8c8519"/><rect x="48" y="92" width="204" height="142" rx="4" fill="#1a1714"/><path d="M70 130q20-24 40 0t40 0M70 176h96M70 204h60" stroke="#f1e3c8" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/><circle cx="212" cy="150" r="22" fill="none" stroke="#f1e3c8" stroke-width="5"/><rect x="60" y="244" width="180" height="10" rx="3" fill="#8c8519"/><rect x="100" y="236" width="28" height="9" rx="3" fill="#f1e3c8"/><line x1="80" y1="254" x2="66" y2="304" stroke="#1a1714" stroke-width="8" stroke-linecap="round"/><line x1="220" y1="254" x2="234" y2="304" stroke="#1a1714" stroke-width="8" stroke-linecap="round"/>
+  </g>
+</svg>

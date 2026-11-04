@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 380">
+  <title>kofî — kofi (traditional women's headdress)</title>
+  <defs>
+    <filter id="g" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  7 0 0 0 -1.55" result="speckle"/>
+      <feComposite in="SourceGraphic" in2="speckle" operator="in" result="grainy"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="2" result="warp"/>
+      <feDisplacementMap in="grainy" in2="warp" scale="4" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="p" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="1" seed="11" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  -9 0 0 0 3.2" result="dots"/>
+      <feComposite in="SourceGraphic" in2="dots" operator="in"/>
+    </filter>
+  </defs>
+  <rect width="300" height="380" fill="#e58bcb"/>
+  <rect width="300" height="380" fill="#fff6e6" opacity="0.5" filter="url(#p)"/>
+  <g filter="url(#g)">
+    <path d="M70 342c0-52 36-80 80-80s80 28 80 80z" fill="#1a1714"/><path d="M196 140c34 20 44 90 32 170l-22-4c6-64 0-120-24-140z" fill="#f1e3c8"/><circle cx="150" cy="200" r="46" fill="#6a9cc8"/><path d="M98 178l6-80h92l6 80z" fill="#8c8519"/><rect x="100" y="126" width="100" height="10" fill="#6a9cc8"/><circle cx="104" cy="182" r="7" fill="#f1e3c8"/><circle cx="117" cy="182" r="7" fill="#f1e3c8"/><circle cx="130" cy="182" r="7" fill="#f1e3c8"/><circle cx="143" cy="182" r="7" fill="#f1e3c8"/><circle cx="156" cy="182" r="7" fill="#f1e3c8"/><circle cx="169" cy="182" r="7" fill="#f1e3c8"/><circle cx="182" cy="182" r="7" fill="#f1e3c8"/><circle cx="195" cy="182" r="7" fill="#f1e3c8"/><circle cx="122" cy="112" r="5" fill="#1a1714"/><circle cx="150" cy="112" r="5" fill="#1a1714"/><circle cx="178" cy="112" r="5" fill="#1a1714"/>
+  </g>
+</svg>

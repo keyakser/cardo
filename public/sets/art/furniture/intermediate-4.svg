@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 380">
+  <title>betanî — blanket</title>
+  <defs>
+    <filter id="g" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  7 0 0 0 -1.55" result="speckle"/>
+      <feComposite in="SourceGraphic" in2="speckle" operator="in" result="grainy"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="2" result="warp"/>
+      <feDisplacementMap in="grainy" in2="warp" scale="4" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="p" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="1" seed="11" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  -9 0 0 0 3.2" result="dots"/>
+      <feComposite in="SourceGraphic" in2="dots" operator="in"/>
+    </filter>
+  </defs>
+  <rect width="300" height="380" fill="#f04e1f"/>
+  <rect width="300" height="380" fill="#fff6e6" opacity="0.5" filter="url(#p)"/>
+  <g filter="url(#g)">
+    <ellipse cx="150" cy="282" rx="100" ry="12" fill="#1a1714" opacity="0.85"/><rect x="60" y="200" width="180" height="70" rx="16" fill="#6a9cc8"/><rect x="60" y="222" width="180" height="10" fill="#1a1714"/><rect x="60" y="244" width="180" height="10" fill="#1a1714"/><rect x="74" y="140" width="152" height="62" rx="16" fill="#f1e3c8"/><rect x="74" y="160" width="152" height="8" fill="#1a1714"/><rect x="74" y="176" width="152" height="8" fill="#1a1714"/><rect x="88" y="94" width="124" height="48" rx="14" fill="#1a1714"/><rect x="88" y="112" width="124" height="8" fill="#6a9cc8"/>
+  </g>
+</svg>

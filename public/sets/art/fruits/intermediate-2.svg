@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 380">
+  <title>lîmon — lemon</title>
+  <defs>
+    <filter id="g" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  7 0 0 0 -1.55" result="speckle"/>
+      <feComposite in="SourceGraphic" in2="speckle" operator="in" result="grainy"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="2" result="warp"/>
+      <feDisplacementMap in="grainy" in2="warp" scale="4" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="p" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="1" seed="11" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  -9 0 0 0 3.2" result="dots"/>
+      <feComposite in="SourceGraphic" in2="dots" operator="in"/>
+    </filter>
+  </defs>
+  <rect width="300" height="380" fill="#e58bcb"/>
+  <rect width="300" height="380" fill="#fff6e6" opacity="0.5" filter="url(#p)"/>
+  <g filter="url(#g)">
+    <ellipse cx="150" cy="306" rx="96" ry="12" fill="#1a1714" opacity="0.85"/>
+    <path d="M50 200c0-50 44-86 100-86s100 36 100 86-44 86-100 86-100-36-100-86z" fill="#f1e3c8" transform="rotate(-20 150 200)"/>
+    <ellipse cx="54" cy="236" rx="12" ry="9" fill="#f1e3c8" transform="rotate(-20 54 236)"/>
+    <ellipse cx="246" cy="166" rx="12" ry="9" fill="#f1e3c8" transform="rotate(-20 246 166)"/>
+    <path d="M94 220c6 26 24 44 50 52" stroke="#8c8519" stroke-width="7" stroke-linecap="round" fill="none" opacity="0.5"/>
+    <path d="M0 0c18 -18 42 -18 60 0c-18 18 -42 18 -60 0z" fill="#8c8519" transform="translate(240 160) rotate(-70)"/>
+    <circle cx="208" cy="262" r="46" fill="#8c8519"/>
+    <circle cx="208" cy="262" r="40" fill="#f1e3c8"/>
+    <line x1="208" y1="262" x2="244" y2="262" stroke="#8c8519" stroke-width="3" stroke-linecap="round"/>
+    <line x1="208" y1="262" x2="233.5" y2="287.5" stroke="#8c8519" stroke-width="3" stroke-linecap="round"/>
+    <line x1="208" y1="262" x2="208" y2="298" stroke="#8c8519" stroke-width="3" stroke-linecap="round"/>
+    <line x1="208" y1="262" x2="182.5" y2="287.5" stroke="#8c8519" stroke-width="3" stroke-linecap="round"/>
+    <line x1="208" y1="262" x2="172" y2="262" stroke="#8c8519" stroke-width="3" stroke-linecap="round"/>
+    <line x1="208" y1="262" x2="182.5" y2="236.5" stroke="#8c8519" stroke-width="3" stroke-linecap="round"/>
+    <line x1="208" y1="262" x2="208" y2="226" stroke="#8c8519" stroke-width="3" stroke-linecap="round"/>
+    <line x1="208" y1="262" x2="233.5" y2="236.5" stroke="#8c8519" stroke-width="3" stroke-linecap="round"/>
+  </g>
+</svg>

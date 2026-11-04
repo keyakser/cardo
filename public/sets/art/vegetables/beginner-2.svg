@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 380">
+  <title>bacanê sor — tomato</title>
+  <defs>
+    <filter id="g" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  7 0 0 0 -1.55" result="speckle"/>
+      <feComposite in="SourceGraphic" in2="speckle" operator="in" result="grainy"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="2" result="warp"/>
+      <feDisplacementMap in="grainy" in2="warp" scale="4" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="p" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="1" seed="11" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  -9 0 0 0 3.2" result="dots"/>
+      <feComposite in="SourceGraphic" in2="dots" operator="in"/>
+    </filter>
+  </defs>
+  <rect width="300" height="380" fill="#e58bcb"/>
+  <rect width="300" height="380" fill="#fff6e6" opacity="0.5" filter="url(#p)"/>
+  <g filter="url(#g)">
+    <ellipse cx="150" cy="302" rx="92" ry="12" fill="#1a1714" opacity="0.85"/>
+    <ellipse cx="150" cy="212" rx="94" ry="82" fill="#f04e1f"/>
+    <path d="M88 196c-4 26 4 52 22 66" stroke="#f1e3c8" stroke-width="12" stroke-linecap="round" fill="none"/>
+    <path d="M120 140c-4 20-4 30 2 44M180 140c4 20 4 30-2 44" stroke="#1a1714" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.3"/>
+    <polygon points="150,90 157,123.9 189.8,113 164,136 189.8,159 157,148.1 150,182 143,148.1 110.2,159 136,136 110.2,113 143,123.9" fill="#8c8519"/>
+    <rect x="146" y="104" width="8" height="30" rx="4" fill="#8c8519" transform="rotate(15 150 120)"/>
+  </g>
+</svg>

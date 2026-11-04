@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 380">
+  <title>stranbêj — singer</title>
+  <defs>
+    <filter id="g" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  7 0 0 0 -1.55" result="speckle"/>
+      <feComposite in="SourceGraphic" in2="speckle" operator="in" result="grainy"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="2" result="warp"/>
+      <feDisplacementMap in="grainy" in2="warp" scale="4" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="p" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="1" seed="11" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  -9 0 0 0 3.2" result="dots"/>
+      <feComposite in="SourceGraphic" in2="dots" operator="in"/>
+    </filter>
+  </defs>
+  <rect width="300" height="380" fill="#f1e3c8"/>
+  <rect width="300" height="380" fill="#fff6e6" opacity="0.5" filter="url(#p)"/>
+  <g filter="url(#g)">
+    <ellipse cx="140" cy="318" rx="70" ry="12" fill="#1a1714" opacity="0.85"/>
+    <line x1="127" y1="255" x2="127" y2="311" stroke="#1a1714" stroke-width="16" stroke-linecap="round"/>
+    <line x1="153" y1="255" x2="153" y2="311" stroke="#1a1714" stroke-width="16" stroke-linecap="round"/>
+    <rect x="108" y="165" width="64" height="100" rx="28" fill="#f04e1f"/>
+    <circle cx="140" cy="137" r="24" fill="#1a1714"/>
+    <path d="M114 166L104 230M164 170L192 150L180 124" stroke="#f04e1f" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <line x1="180" y1="122" x2="186" y2="148" stroke="#1a1714" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="180" cy="112" r="11" fill="#1a1714"/>
+    <path d="M206 92Q218 110 206 128M224 80Q244 110 224 140" stroke="#6a9cc8" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+</svg>

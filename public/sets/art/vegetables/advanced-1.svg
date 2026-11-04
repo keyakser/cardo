@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 380">
+  <title>pincar — wild greens</title>
+  <defs>
+    <filter id="g" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  7 0 0 0 -1.55" result="speckle"/>
+      <feComposite in="SourceGraphic" in2="speckle" operator="in" result="grainy"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="2" result="warp"/>
+      <feDisplacementMap in="grainy" in2="warp" scale="4" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="p" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="1" seed="11" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  -9 0 0 0 3.2" result="dots"/>
+      <feComposite in="SourceGraphic" in2="dots" operator="in"/>
+    </filter>
+  </defs>
+  <rect width="300" height="380" fill="#e58bcb"/>
+  <rect width="300" height="380" fill="#fff6e6" opacity="0.5" filter="url(#p)"/>
+  <g filter="url(#g)">
+    <ellipse cx="150" cy="314" rx="80" ry="12" fill="#1a1714" opacity="0.85"/>
+    <path d="M0 0c39 -32.5 91 -32.5 130 0c-39 32.5 -91 32.5 -130 0z" fill="#8c8519" transform="translate(150 296) rotate(-50)"/>
+    <path d="M0 0c39 -32.5 91 -32.5 130 0c-39 32.5 -91 32.5 -130 0z" fill="#1a1714" transform="translate(150 296) rotate(-130)"/>
+    <path d="M0 0c48 -54.4 112 -54.4 160 0c-48 54.4 -112 54.4 -160 0z" fill="#8c8519" transform="translate(150 296) rotate(-75)"/>
+    <path d="M0 0c45 -45 105 -45 150 0c-45 45 -105 45 -150 0z" fill="#f1e3c8" transform="translate(150 296) rotate(-105)"/>
+    <path d="M0 0c36 -24 84 -24 120 0c-36 24 -84 24 -120 0z" fill="#8c8519" transform="translate(150 296) rotate(-90)"/>
+    <path d="M0 0c30 -20 70 -20 100 0c-30 20 -70 20 -100 0z" fill="#f1e3c8" transform="translate(150 296) rotate(-30)"/>
+    <path d="M0 0c30 -30 70 -30 100 0c-30 30 -70 30 -100 0z" fill="#8c8519" transform="translate(150 296) rotate(-150)"/>
+    <rect x="126" y="272" width="48" height="20" rx="6" fill="#f04e1f"/>
+    <path d="M138 292v18M150 292v20M162 292v18" stroke="#1a1714" stroke-width="5" stroke-linecap="round" fill="none"/>
+  </g>
+</svg>

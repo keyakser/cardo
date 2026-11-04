@@ -1,0 +1,191 @@
+{
+  "id": "sports",
+  "levels": {
+    "beginner": [
+      {
+        "ku": "futbol",
+        "ex": "Ez ji futbolê pir hez dikim.",
+        "mean": { "en": "football", "tr": "futbol", "de": "Fußball", "fr": "football", "es": "fútbol", "it": "calcio", "pt": "futebol", "ru": "футбол", "ar": "كرة القدم", "fa": "فوتبال", "zh": "足球", "ja": "サッカー", "ko": "축구" },
+        "exTr": { "en": "I love football very much.", "tr": "Futbolu çok severim.", "de": "Ich liebe Fußball sehr.", "fr": "J'aime beaucoup le football.", "es": "Me gusta mucho el fútbol.", "it": "Amo molto il calcio.", "pt": "Eu gosto muito de futebol.", "ru": "Я очень люблю футбол.", "ar": "أحب كرة القدم كثيرًا.", "fa": "من فوتبال را خیلی دوست دارم.", "zh": "我非常喜欢足球。", "ja": "私はサッカーが大好きです。", "ko": "나는 축구를 아주 좋아한다." }
+      },
+      {
+        "ku": "gog",
+        "ex": "Zarok bi gogê dilîzin.",
+        "mean": { "en": "ball", "tr": "top", "de": "Ball", "fr": "ballon", "es": "pelota", "it": "palla", "pt": "bola", "ru": "мяч", "ar": "كرة", "fa": "توپ", "zh": "球", "ja": "ボール", "ko": "공" },
+        "exTr": { "en": "The children are playing with the ball.", "tr": "Çocuklar topla oynuyor.", "de": "Die Kinder spielen mit dem Ball.", "fr": "Les enfants jouent avec le ballon.", "es": "Los niños juegan con la pelota.", "it": "I bambini giocano con la palla.", "pt": "As crianças brincam com a bola.", "ru": "Дети играют с мячом.", "ar": "الأطفال يلعبون بالكرة.", "fa": "بچه‌ها با توپ بازی می‌کنند.", "zh": "孩子们在玩球。", "ja": "子どもたちはボールで遊んでいます。", "ko": "아이들이 공을 가지고 논다." }
+      },
+      {
+        "ku": "werzîş",
+        "ex": "Werzîş ji bo laş baş e.",
+        "mean": { "en": "sport", "tr": "spor", "de": "Sport", "fr": "sport", "es": "deporte", "it": "sport", "pt": "esporte", "ru": "спорт", "ar": "رياضة", "fa": "ورزش", "zh": "运动", "ja": "スポーツ", "ko": "운동" },
+        "exTr": { "en": "Sport is good for the body.", "tr": "Spor vücut için iyidir.", "de": "Sport ist gut für den Körper.", "fr": "Le sport est bon pour le corps.", "es": "El deporte es bueno para el cuerpo.", "it": "Lo sport fa bene al corpo.", "pt": "O esporte faz bem para o corpo.", "ru": "Спорт полезен для тела.", "ar": "الرياضة مفيدة للجسم.", "fa": "ورزش برای بدن خوب است.", "zh": "运动对身体有好处。", "ja": "スポーツは体に良いです。", "ko": "운동은 몸에 좋다." }
+      },
+      {
+        "ku": "bazdan",
+        "ex": "Bazdan ji bo tenduristiyê baş e.",
+        "mean": { "en": "running", "tr": "koşmak", "de": "Laufen", "fr": "course à pied", "es": "correr", "it": "corsa", "pt": "corrida", "ru": "бег", "ar": "الجري", "fa": "دویدن", "zh": "跑步", "ja": "ランニング", "ko": "달리기" },
+        "exTr": { "en": "Running is good for health.", "tr": "Koşmak sağlık için iyidir.", "de": "Laufen ist gut für die Gesundheit.", "fr": "Courir est bon pour la santé.", "es": "Correr es bueno para la salud.", "it": "Correre fa bene alla salute.", "pt": "Correr faz bem para a saúde.", "ru": "Бег полезен для здоровья.", "ar": "الجري مفيد للصحة.", "fa": "دویدن برای سلامتی خوب است.", "zh": "跑步有益健康。", "ja": "走ることは健康に良いです。", "ko": "달리기는 건강에 좋다." }
+      },
+      {
+        "ku": "avjenî",
+        "ex": "Avjenî di havînê de pir xweş e.",
+        "mean": { "en": "swimming", "tr": "yüzme", "de": "Schwimmen", "fr": "natation", "es": "natación", "it": "nuoto", "pt": "natação", "ru": "плавание", "ar": "السباحة", "fa": "شنا", "zh": "游泳", "ja": "水泳", "ko": "수영" },
+        "exTr": { "en": "Swimming is very nice in summer.", "tr": "Yüzmek yazın çok güzeldir.", "de": "Schwimmen ist im Sommer sehr schön.", "fr": "La natation est très agréable en été.", "es": "Nadar es muy agradable en verano.", "it": "Nuotare è molto bello d'estate.", "pt": "Nadar é muito bom no verão.", "ru": "Летом плавать очень приятно.", "ar": "السباحة ممتعة جدًا في الصيف.", "fa": "شنا در تابستان خیلی خوب است.", "zh": "夏天游泳非常舒服。", "ja": "夏の水泳はとても気持ちいいです。", "ko": "여름에 수영은 아주 즐겁다." }
+      },
+      {
+        "ku": "lîstik",
+        "ex": "Ev lîstik pir xweş e.",
+        "mean": { "en": "game", "tr": "oyun", "de": "Spiel", "fr": "jeu", "es": "juego", "it": "gioco", "pt": "jogo", "ru": "игра", "ar": "لعبة", "fa": "بازی", "zh": "游戏", "ja": "ゲーム", "ko": "경기" },
+        "exTr": { "en": "This game is a lot of fun.", "tr": "Bu oyun çok güzel.", "de": "Dieses Spiel macht viel Spaß.", "fr": "Ce jeu est très amusant.", "es": "Este juego es muy divertido.", "it": "Questo gioco è molto divertente.", "pt": "Este jogo é muito divertido.", "ru": "Эта игра очень интересная.", "ar": "هذه اللعبة ممتعة جدًا.", "fa": "این بازی خیلی جالب است.", "zh": "这个游戏很好玩。", "ja": "このゲームはとても楽しいです。", "ko": "이 경기는 아주 재미있다." }
+      },
+      {
+        "ku": "lîstikvan",
+        "ex": "Lîstikvan li qadê ne.",
+        "mean": { "en": "player", "tr": "oyuncu", "de": "Spieler", "fr": "joueur", "es": "jugador", "it": "giocatore", "pt": "jogador", "ru": "игрок", "ar": "لاعب", "fa": "بازیکن", "zh": "运动员", "ja": "選手", "ko": "선수" },
+        "exTr": { "en": "The players are on the field.", "tr": "Oyuncular sahada.", "de": "Die Spieler sind auf dem Platz.", "fr": "Les joueurs sont sur le terrain.", "es": "Los jugadores están en el campo.", "it": "I giocatori sono in campo.", "pt": "Os jogadores estão em campo.", "ru": "Игроки на поле.", "ar": "اللاعبون في الملعب.", "fa": "بازیکنان در زمین هستند.", "zh": "球员们在场上。", "ja": "選手たちはグラウンドにいます。", "ko": "선수들이 경기장에 있다." }
+      },
+      {
+        "ku": "gol",
+        "ex": "Ev gola yekem a lîstikê ye.",
+        "mean": { "en": "goal", "tr": "gol", "de": "Tor", "fr": "but", "es": "gol", "it": "gol", "pt": "gol", "ru": "гол", "ar": "هدف", "fa": "گل", "zh": "进球", "ja": "ゴール", "ko": "골" },
+        "exTr": { "en": "This is the first goal of the game.", "tr": "Bu maçın ilk golü.", "de": "Das ist das erste Tor des Spiels.", "fr": "C'est le premier but du match.", "es": "Este es el primer gol del partido.", "it": "Questo è il primo gol della partita.", "pt": "Este é o primeiro gol do jogo.", "ru": "Это первый гол в игре.", "ar": "هذا هو الهدف الأول في المباراة.", "fa": "این اولین گل بازی است.", "zh": "这是比赛的第一个进球。", "ja": "これは試合の最初のゴールです。", "ko": "이것은 경기의 첫 골이다." }
+      },
+      {
+        "ku": "bisîklet",
+        "ex": "Ez bi bisîkletê diçim dibistanê.",
+        "mean": { "en": "bicycle", "tr": "bisiklet", "de": "Fahrrad", "fr": "vélo", "es": "bicicleta", "it": "bicicletta", "pt": "bicicleta", "ru": "велосипед", "ar": "دراجة", "fa": "دوچرخه", "zh": "自行车", "ja": "自転車", "ko": "자전거" },
+        "exTr": { "en": "I go to school by bicycle.", "tr": "Okula bisikletle gidiyorum.", "de": "Ich fahre mit dem Fahrrad zur Schule.", "fr": "Je vais à l'école à vélo.", "es": "Voy a la escuela en bicicleta.", "it": "Vado a scuola in bicicletta.", "pt": "Eu vou para a escola de bicicleta.", "ru": "Я езжу в школу на велосипеде.", "ar": "أذهب إلى المدرسة بالدراجة.", "fa": "من با دوچرخه به مدرسه می‌روم.", "zh": "我骑自行车去上学。", "ja": "私は自転車で学校に行きます。", "ko": "나는 자전거로 학교에 간다." }
+      },
+      {
+        "ku": "basketbol",
+        "ex": "Birayê min basketbolê dilîze.",
+        "mean": { "en": "basketball", "tr": "basketbol", "de": "Basketball", "fr": "basket-ball", "es": "baloncesto", "it": "pallacanestro", "pt": "basquete", "ru": "баскетбол", "ar": "كرة السلة", "fa": "بسکتبال", "zh": "篮球", "ja": "バスケットボール", "ko": "농구" },
+        "exTr": { "en": "My brother plays basketball.", "tr": "Kardeşim basketbol oynuyor.", "de": "Mein Bruder spielt Basketball.", "fr": "Mon frère joue au basket.", "es": "Mi hermano juega al baloncesto.", "it": "Mio fratello gioca a pallacanestro.", "pt": "Meu irmão joga basquete.", "ru": "Мой брат играет в баскетбол.", "ar": "أخي يلعب كرة السلة.", "fa": "برادرم بسکتبال بازی می‌کند.", "zh": "我哥哥打篮球。", "ja": "兄はバスケットボールをします。", "ko": "내 형은 농구를 한다." }
+      }
+    ],
+    "intermediate": [
+      {
+        "ku": "voleybol",
+        "ex": "Em li peravê voleybolê dilîzin.",
+        "mean": { "en": "volleyball", "tr": "voleybol", "de": "Volleyball", "fr": "volley-ball", "es": "voleibol", "it": "pallavolo", "pt": "vôlei", "ru": "волейбол", "ar": "الكرة الطائرة", "fa": "والیبال", "zh": "排球", "ja": "バレーボール", "ko": "배구" },
+        "exTr": { "en": "We play volleyball on the beach.", "tr": "Sahilde voleybol oynuyoruz.", "de": "Wir spielen Volleyball am Strand.", "fr": "Nous jouons au volley sur la plage.", "es": "Jugamos al voleibol en la playa.", "it": "Giochiamo a pallavolo sulla spiaggia.", "pt": "Nós jogamos vôlei na praia.", "ru": "Мы играем в волейбол на пляже.", "ar": "نلعب الكرة الطائرة على الشاطئ.", "fa": "ما در ساحل والیبال بازی می‌کنیم.", "zh": "我们在海滩上打排球。", "ja": "私たちはビーチでバレーボールをします。", "ko": "우리는 해변에서 배구를 한다." }
+      },
+      {
+        "ku": "tenîs",
+        "ex": "Ew her hefte tenîsê dilîze.",
+        "mean": { "en": "tennis", "tr": "tenis", "de": "Tennis", "fr": "tennis", "es": "tenis", "it": "tennis", "pt": "tênis", "ru": "теннис", "ar": "التنس", "fa": "تنیس", "zh": "网球", "ja": "テニス", "ko": "테니스" },
+        "exTr": { "en": "She plays tennis every week.", "tr": "O her hafta tenis oynuyor.", "de": "Sie spielt jede Woche Tennis.", "fr": "Elle joue au tennis chaque semaine.", "es": "Ella juega al tenis cada semana.", "it": "Lei gioca a tennis ogni settimana.", "pt": "Ela joga tênis toda semana.", "ru": "Она играет в теннис каждую неделю.", "ar": "هي تلعب التنس كل أسبوع.", "fa": "او هر هفته تنیس بازی می‌کند.", "zh": "她每周打网球。", "ja": "彼女は毎週テニスをします。", "ko": "그녀는 매주 테니스를 친다." }
+      },
+      {
+        "ku": "pêşbirk",
+        "ex": "Pêşbirk sibê dest pê dike.",
+        "mean": { "en": "competition", "tr": "yarışma", "de": "Wettbewerb", "fr": "compétition", "es": "competición", "it": "gara", "pt": "competição", "ru": "соревнование", "ar": "مسابقة", "fa": "مسابقه", "zh": "比赛", "ja": "競技会", "ko": "대회" },
+        "exTr": { "en": "The competition starts tomorrow.", "tr": "Yarışma yarın başlıyor.", "de": "Der Wettbewerb beginnt morgen.", "fr": "La compétition commence demain.", "es": "La competición empieza mañana.", "it": "La gara inizia domani.", "pt": "A competição começa amanhã.", "ru": "Соревнование начинается завтра.", "ar": "تبدأ المسابقة غدًا.", "fa": "مسابقه فردا شروع می‌شود.", "zh": "比赛明天开始。", "ja": "競技会は明日始まります。", "ko": "대회는 내일 시작한다." }
+      },
+      {
+        "ku": "dadwer",
+        "ex": "Dadwer biryara dawî dide.",
+        "mean": { "en": "referee", "tr": "hakem", "de": "Schiedsrichter", "fr": "arbitre", "es": "árbitro", "it": "arbitro", "pt": "árbitro", "ru": "судья", "ar": "حكم", "fa": "داور", "zh": "裁判", "ja": "審判", "ko": "심판" },
+        "exTr": { "en": "The referee makes the final decision.", "tr": "Son kararı hakem verir.", "de": "Der Schiedsrichter trifft die endgültige Entscheidung.", "fr": "L'arbitre prend la décision finale.", "es": "El árbitro toma la decisión final.", "it": "L'arbitro prende la decisione finale.", "pt": "O árbitro toma a decisão final.", "ru": "Судья принимает окончательное решение.", "ar": "الحكم يتخذ القرار النهائي.", "fa": "داور تصمیم نهایی را می‌گیرد.", "zh": "裁判做出最终决定。", "ja": "審判が最終的な判断を下します。", "ko": "심판이 최종 결정을 내린다." }
+      },
+      {
+        "ku": "rahêner",
+        "ex": "Rahênerê tîma me pir jêhatî ye.",
+        "mean": { "en": "coach", "tr": "antrenör", "de": "Trainer", "fr": "entraîneur", "es": "entrenador", "it": "allenatore", "pt": "treinador", "ru": "тренер", "ar": "مدرب", "fa": "مربی", "zh": "教练", "ja": "コーチ", "ko": "코치" },
+        "exTr": { "en": "Our team's coach is very skilled.", "tr": "Takımımızın antrenörü çok yetenekli.", "de": "Der Trainer unserer Mannschaft ist sehr fähig.", "fr": "L'entraîneur de notre équipe est très compétent.", "es": "El entrenador de nuestro equipo es muy hábil.", "it": "L'allenatore della nostra squadra è molto bravo.", "pt": "O treinador do nosso time é muito competente.", "ru": "Тренер нашей команды очень опытный.", "ar": "مدرب فريقنا ماهر جدًا.", "fa": "مربی تیم ما خیلی ماهر است.", "zh": "我们队的教练非常能干。", "ja": "私たちのチームのコーチはとても優秀です。", "ko": "우리 팀 코치는 아주 유능하다." }
+      },
+      {
+        "ku": "serketin",
+        "ex": "Serketin ji bo me pir girîng e.",
+        "mean": { "en": "victory", "tr": "zafer", "de": "Sieg", "fr": "victoire", "es": "victoria", "it": "vittoria", "pt": "vitória", "ru": "победа", "ar": "فوز", "fa": "پیروزی", "zh": "胜利", "ja": "勝利", "ko": "승리" },
+        "exTr": { "en": "Victory is very important to us.", "tr": "Galibiyet bizim için çok önemli.", "de": "Der Sieg ist uns sehr wichtig.", "fr": "La victoire est très importante pour nous.", "es": "La victoria es muy importante para nosotros.", "it": "La vittoria è molto importante per noi.", "pt": "A vitória é muito importante para nós.", "ru": "Победа очень важна для нас.", "ar": "الفوز مهم جدًا بالنسبة لنا.", "fa": "پیروزی برای ما خیلی مهم است.", "zh": "胜利对我们非常重要。", "ja": "勝利は私たちにとってとても大切です。", "ko": "승리는 우리에게 아주 중요하다." }
+      },
+      {
+        "ku": "têkçûn",
+        "ex": "Têkçûn jî beşek ji werzîşê ye.",
+        "mean": { "en": "defeat", "tr": "yenilgi", "de": "Niederlage", "fr": "défaite", "es": "derrota", "it": "sconfitta", "pt": "derrota", "ru": "поражение", "ar": "هزيمة", "fa": "شکست", "zh": "失败", "ja": "敗北", "ko": "패배" },
+        "exTr": { "en": "Defeat is also part of sport.", "tr": "Yenilgi de sporun bir parçasıdır.", "de": "Auch die Niederlage gehört zum Sport.", "fr": "La défaite fait aussi partie du sport.", "es": "La derrota también es parte del deporte.", "it": "Anche la sconfitta fa parte dello sport.", "pt": "A derrota também faz parte do esporte.", "ru": "Поражение тоже часть спорта.", "ar": "الهزيمة أيضًا جزء من الرياضة.", "fa": "شکست هم بخشی از ورزش است.", "zh": "失败也是运动的一部分。", "ja": "敗北もスポーツの一部です。", "ko": "패배도 스포츠의 일부이다." }
+      },
+      {
+        "ku": "xal",
+        "ex": "Her serketin sê xalan dide.",
+        "mean": { "en": "point", "tr": "puan", "de": "Punkt", "fr": "point", "es": "punto", "it": "punto", "pt": "ponto", "ru": "очко", "ar": "نقطة", "fa": "امتیاز", "zh": "分", "ja": "ポイント", "ko": "점수" },
+        "exTr": { "en": "Every win gives three points.", "tr": "Her galibiyet üç puan verir.", "de": "Jeder Sieg bringt drei Punkte.", "fr": "Chaque victoire rapporte trois points.", "es": "Cada victoria da tres puntos.", "it": "Ogni vittoria vale tre punti.", "pt": "Cada vitória vale três pontos.", "ru": "Каждая победа приносит три очка.", "ar": "كل فوز يمنح ثلاث نقاط.", "fa": "هر پیروزی سه امتیاز دارد.", "zh": "每场胜利得三分。", "ja": "勝つたびに3ポイントがもらえます。", "ko": "승리할 때마다 3점을 얻는다." }
+      },
+      {
+        "ku": "werzîşvan",
+        "ex": "Werzîşvan her roj xwe amade dikin.",
+        "mean": { "en": "athlete", "tr": "sporcu", "de": "Sportler", "fr": "athlète", "es": "deportista", "it": "atleta", "pt": "atleta", "ru": "спортсмен", "ar": "رياضي", "fa": "ورزشکار", "zh": "运动员", "ja": "スポーツ選手", "ko": "운동선수" },
+        "exTr": { "en": "The athletes prepare every day.", "tr": "Sporcular her gün hazırlanıyor.", "de": "Die Sportler bereiten sich jeden Tag vor.", "fr": "Les athlètes se préparent chaque jour.", "es": "Los deportistas se preparan cada día.", "it": "Gli atleti si preparano ogni giorno.", "pt": "Os atletas se preparam todos os dias.", "ru": "Спортсмены готовятся каждый день.", "ar": "يستعد الرياضيون كل يوم.", "fa": "ورزشکاران هر روز آماده می‌شوند.", "zh": "运动员们每天都在做准备。", "ja": "選手たちは毎日準備をしています。", "ko": "운동선수들은 매일 준비한다." }
+      },
+      {
+        "ku": "şampiyon",
+        "ex": "Tîma bajarê me bû şampiyon.",
+        "mean": { "en": "champion", "tr": "şampiyon", "de": "Meister", "fr": "champion", "es": "campeón", "it": "campione", "pt": "campeão", "ru": "чемпион", "ar": "بطل", "fa": "قهرمان", "zh": "冠军", "ja": "チャンピオン", "ko": "챔피언" },
+        "exTr": { "en": "Our city's team became champion.", "tr": "Şehrimizin takımı şampiyon oldu.", "de": "Die Mannschaft unserer Stadt wurde Meister.", "fr": "L'équipe de notre ville est devenue championne.", "es": "El equipo de nuestra ciudad se convirtió en campeón.", "it": "La squadra della nostra città è diventata campione.", "pt": "O time da nossa cidade foi campeão.", "ru": "Команда нашего города стала чемпионом.", "ar": "أصبح فريق مدينتنا بطلًا.", "fa": "تیم شهر ما قهرمان شد.", "zh": "我们城市的球队成为了冠军。", "ja": "私たちの町のチームが優勝しました。", "ko": "우리 도시의 팀이 우승했다." }
+      }
+    ],
+    "advanced": [
+      {
+        "ku": "gulaş",
+        "ex": "Gulaş werzîşeke kevnar a Kurdan e.",
+        "mean": { "en": "wrestling", "tr": "güreş", "de": "Ringen", "fr": "lutte", "es": "lucha", "it": "lotta", "pt": "luta livre", "ru": "борьба", "ar": "المصارعة", "fa": "کشتی", "zh": "摔跤", "ja": "レスリング", "ko": "레슬링" },
+        "exTr": { "en": "Wrestling is an ancient sport of the Kurds.", "tr": "Güreş Kürtlerin eski bir sporudur.", "de": "Ringen ist ein uralter Sport der Kurden.", "fr": "La lutte est un sport ancien des Kurdes.", "es": "La lucha es un deporte antiguo de los kurdos.", "it": "La lotta è uno sport antico dei curdi.", "pt": "A luta é um esporte antigo dos curdos.", "ru": "Борьба — древний вид спорта курдов.", "ar": "المصارعة رياضة قديمة لدى الكرد.", "fa": "کشتی ورزشی کهن در میان کردهاست.", "zh": "摔跤是库尔德人的一项古老运动。", "ja": "レスリングはクルド人の古いスポーツです。", "ko": "레슬링은 쿠르드인의 오래된 스포츠이다." }
+      },
+      {
+        "ku": "çiyagerî",
+        "ex": "Çiyagerî li herêmên çiyayî pir tê kirin.",
+        "mean": { "en": "mountaineering", "tr": "dağcılık", "de": "Bergsteigen", "fr": "alpinisme", "es": "montañismo", "it": "alpinismo", "pt": "montanhismo", "ru": "альпинизм", "ar": "تسلق الجبال", "fa": "کوهنوردی", "zh": "登山", "ja": "登山", "ko": "등산" },
+        "exTr": { "en": "Mountaineering is done a lot in mountainous regions.", "tr": "Dağlık bölgelerde dağcılık çok yapılır.", "de": "In Bergregionen wird viel Bergsteigen betrieben.", "fr": "L'alpinisme est très pratiqué dans les régions montagneuses.", "es": "En las regiones montañosas se practica mucho el montañismo.", "it": "Nelle regioni montuose si pratica molto l'alpinismo.", "pt": "O montanhismo é muito praticado nas regiões montanhosas.", "ru": "В горных районах много занимаются альпинизмом.", "ar": "يُمارس تسلق الجبال كثيرًا في المناطق الجبلية.", "fa": "در مناطق کوهستانی کوهنوردی زیاد انجام می‌شود.", "zh": "山区的人们经常登山。", "ja": "山岳地帯では登山がよく行われています。", "ko": "산악 지역에서는 등산을 많이 한다." }
+      },
+      {
+        "ku": "siwarî",
+        "ex": "Bapîrê min ji siwariyê pir hez dike.",
+        "mean": { "en": "horse riding", "tr": "binicilik", "de": "Reiten", "fr": "équitation", "es": "equitación", "it": "equitazione", "pt": "equitação", "ru": "верховая езда", "ar": "ركوب الخيل", "fa": "سوارکاری", "zh": "骑马", "ja": "乗馬", "ko": "승마" },
+        "exTr": { "en": "My grandfather loves horse riding.", "tr": "Dedem biniciliği çok sever.", "de": "Mein Großvater liebt das Reiten.", "fr": "Mon grand-père adore l'équitation.", "es": "A mi abuelo le encanta montar a caballo.", "it": "Mio nonno ama molto andare a cavallo.", "pt": "Meu avô adora andar a cavalo.", "ru": "Мой дедушка очень любит верховую езду.", "ar": "جدي يحب ركوب الخيل كثيرًا.", "fa": "پدربزرگم سوارکاری را خیلی دوست دارد.", "zh": "我爷爷非常喜欢骑马。", "ja": "祖父は乗馬が大好きです。", "ko": "우리 할아버지는 승마를 아주 좋아하신다." }
+      },
+      {
+        "ku": "boks",
+        "ex": "Boks werzîşeke dijwar e.",
+        "mean": { "en": "boxing", "tr": "boks", "de": "Boxen", "fr": "boxe", "es": "boxeo", "it": "pugilato", "pt": "boxe", "ru": "бокс", "ar": "الملاكمة", "fa": "بوکس", "zh": "拳击", "ja": "ボクシング", "ko": "권투" },
+        "exTr": { "en": "Boxing is a tough sport.", "tr": "Boks zor bir spordur.", "de": "Boxen ist ein harter Sport.", "fr": "La boxe est un sport difficile.", "es": "El boxeo es un deporte duro.", "it": "Il pugilato è uno sport duro.", "pt": "O boxe é um esporte difícil.", "ru": "Бокс — тяжёлый вид спорта.", "ar": "الملاكمة رياضة صعبة.", "fa": "بوکس ورزش سختی است.", "zh": "拳击是一项艰苦的运动。", "ja": "ボクシングは厳しいスポーツです。", "ko": "권투는 힘든 스포츠이다." }
+      },
+      {
+        "ku": "jîmnastîk",
+        "ex": "Keçik her sibe jîmnastîkê dike.",
+        "mean": { "en": "gymnastics", "tr": "jimnastik", "de": "Turnen", "fr": "gymnastique", "es": "gimnasia", "it": "ginnastica", "pt": "ginástica", "ru": "гимнастика", "ar": "الجمباز", "fa": "ژیمناستیک", "zh": "体操", "ja": "体操", "ko": "체조" },
+        "exTr": { "en": "The girl does gymnastics every morning.", "tr": "Kız her sabah jimnastik yapıyor.", "de": "Das Mädchen turnt jeden Morgen.", "fr": "La fille fait de la gymnastique chaque matin.", "es": "La niña hace gimnasia cada mañana.", "it": "La ragazza fa ginnastica ogni mattina.", "pt": "A menina faz ginástica toda manhã.", "ru": "Девочка каждое утро занимается гимнастикой.", "ar": "الفتاة تمارس الجمباز كل صباح.", "fa": "دختر هر صبح ژیمناستیک کار می‌کند.", "zh": "女孩每天早上做体操。", "ja": "その女の子は毎朝体操をします。", "ko": "그 소녀는 매일 아침 체조를 한다." }
+      },
+      {
+        "ku": "rahênan",
+        "ex": "Rahênana îro du saetan didome.",
+        "mean": { "en": "training", "tr": "antrenman", "de": "Training", "fr": "entraînement", "es": "entrenamiento", "it": "allenamento", "pt": "treino", "ru": "тренировка", "ar": "تدريب", "fa": "تمرین", "zh": "训练", "ja": "トレーニング", "ko": "훈련" },
+        "exTr": { "en": "Today's training lasts two hours.", "tr": "Bugünkü antrenman iki saat sürüyor.", "de": "Das heutige Training dauert zwei Stunden.", "fr": "L'entraînement d'aujourd'hui dure deux heures.", "es": "El entrenamiento de hoy dura dos horas.", "it": "L'allenamento di oggi dura due ore.", "pt": "O treino de hoje dura duas horas.", "ru": "Сегодняшняя тренировка длится два часа.", "ar": "يستمر تدريب اليوم ساعتين.", "fa": "تمرین امروز دو ساعت طول می‌کشد.", "zh": "今天的训练持续两个小时。", "ja": "今日のトレーニングは2時間続きます。", "ko": "오늘 훈련은 두 시간 동안 계속된다." }
+      },
+      {
+        "ku": "xelat",
+        "ex": "Yê ku bi ser dikeve xelatê distîne.",
+        "mean": { "en": "prize", "tr": "ödül", "de": "Preis", "fr": "prix", "es": "premio", "it": "premio", "pt": "prêmio", "ru": "награда", "ar": "جائزة", "fa": "جایزه", "zh": "奖品", "ja": "賞", "ko": "상" },
+        "exTr": { "en": "Whoever wins receives the prize.", "tr": "Kazanan ödülü alır.", "de": "Wer gewinnt, bekommt den Preis.", "fr": "Celui qui gagne reçoit le prix.", "es": "Quien gana recibe el premio.", "it": "Chi vince riceve il premio.", "pt": "Quem vence recebe o prêmio.", "ru": "Кто побеждает, тот получает награду.", "ar": "من يفوز يحصل على الجائزة.", "fa": "هر کس برنده شود جایزه را می‌گیرد.", "zh": "获胜者将获得奖品。", "ja": "勝った人が賞をもらいます。", "ko": "이기는 사람이 상을 받는다." }
+      },
+      {
+        "ku": "temaşevan",
+        "ex": "Temaşevan li stadyumê stranan dibêjin.",
+        "mean": { "en": "spectator", "tr": "seyirci", "de": "Zuschauer", "fr": "spectateur", "es": "espectador", "it": "spettatore", "pt": "espectador", "ru": "зритель", "ar": "متفرج", "fa": "تماشاگر", "zh": "观众", "ja": "観客", "ko": "관중" },
+        "exTr": { "en": "The spectators sing songs in the stadium.", "tr": "Seyirciler stadyumda şarkı söylüyor.", "de": "Die Zuschauer singen im Stadion Lieder.", "fr": "Les spectateurs chantent dans le stade.", "es": "Los espectadores cantan canciones en el estadio.", "it": "Gli spettatori cantano canzoni allo stadio.", "pt": "Os torcedores cantam músicas no estádio.", "ru": "Зрители поют песни на стадионе.", "ar": "يغني المتفرجون الأغاني في الملعب.", "fa": "تماشاگران در ورزشگاه آواز می‌خوانند.", "zh": "观众们在体育场里唱歌。", "ja": "観客はスタジアムで歌を歌っています。", "ko": "관중들이 경기장에서 노래를 부른다." }
+      },
+      {
+        "ku": "stadyum",
+        "ex": "Stadyuma nû hezaran kesan dihewîne.",
+        "mean": { "en": "stadium", "tr": "stadyum", "de": "Stadion", "fr": "stade", "es": "estadio", "it": "stadio", "pt": "estádio", "ru": "стадион", "ar": "ملعب", "fa": "ورزشگاه", "zh": "体育场", "ja": "スタジアム", "ko": "경기장" },
+        "exTr": { "en": "The new stadium holds thousands of people.", "tr": "Yeni stadyum binlerce kişi alıyor.", "de": "Das neue Stadion fasst Tausende von Menschen.", "fr": "Le nouveau stade accueille des milliers de personnes.", "es": "El nuevo estadio tiene capacidad para miles de personas.", "it": "Il nuovo stadio ospita migliaia di persone.", "pt": "O novo estádio comporta milhares de pessoas.", "ru": "Новый стадион вмещает тысячи людей.", "ar": "يتسع الملعب الجديد لآلاف الأشخاص.", "fa": "ورزشگاه جدید هزاران نفر گنجایش دارد.", "zh": "新体育场能容纳数千人。", "ja": "新しいスタジアムは数千人を収容できます。", "ko": "새 경기장은 수천 명을 수용한다." }
+      },
+      {
+        "ku": "madalya",
+        "ex": "Ew ji bo madalyaya zêr dixebite.",
+        "mean": { "en": "medal", "tr": "madalya", "de": "Medaille", "fr": "médaille", "es": "medalla", "it": "medaglia", "pt": "medalha", "ru": "медаль", "ar": "ميدالية", "fa": "مدال", "zh": "奖牌", "ja": "メダル", "ko": "메달" },
+        "exTr": { "en": "She is working for the gold medal.", "tr": "Altın madalya için çalışıyor.", "de": "Sie arbeitet für die Goldmedaille.", "fr": "Elle travaille pour la médaille d'or.", "es": "Ella trabaja por la medalla de oro.", "it": "Lei lavora per la medaglia d'oro.", "pt": "Ela trabalha pela medalha de ouro.", "ru": "Она работает ради золотой медали.", "ar": "إنها تعمل من أجل الميدالية الذهبية.", "fa": "او برای مدال طلا تلاش می‌کند.", "zh": "她在为金牌而努力。", "ja": "彼女は金メダルを目指して努力しています。", "ko": "그녀는 금메달을 위해 노력한다." }
+      }
+    ]
+  }
+}
